@@ -14,7 +14,7 @@
 * [Lesson Schedule, Quick Links & Recordings](#class-lessons-recordings)
 
 ## Course Meeting Details
-* **Course Dates**: September 3, 2020 - February 29, 2020
+* **Course Dates**: February 11, 2020 -  August 5, 2020
 ### Class Meetings
 * Tuesdays & Wednesdays, 6:30 - 10:45 PM Eastern time
 * Saturdays, 10:00 AM - 6:00PM Eastern time
