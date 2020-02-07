@@ -1,0 +1,23 @@
+body {
+    background-color: #F8F7FF;
+    text-align: center;
+
+}
+
+.owl {
+    font-family: fantasy, sans-serif;
+}
+
+.secret {
+    opacity: 0.5;
+}
+
+ul {
+    list-style: none;
+}
+
+table, th, td {
+    border: 1px solid gray;
+    text-align: center;
+    margin: 0px auto;
+}

@@ -1,0 +1,59 @@
+/* I need some work on my CSS work. It took me a couple hours to get this far. */
+/* any resources would be very helpful */
+
+
+header{
+    display: inline-block;
+}
+h2 {
+    color: blue;
+}
+.armcast{
+    height: 1200px;
+    width: 100%;
+
+}
+.third{
+    display: inline-block;
+    border: 1px solid black;
+    width: 30%;
+    margin: auto;
+}
+
+.membership{
+    text-align: center;
+}
+
+.blue {
+    background-color: blue;
+    border: none;
+    width: 20%;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px 50px;
+    margin: 40px 100px;
+
+
+}
+
+.white
+
+ul {
+    list-style-type: none;
+    display: inline-block;
+    height: 50px;
+    width: 10%;
+    margin: auto;
+    border-top: 1px solid black;
+    text-decoration: none;
+}
+
+a {
+    color: grey;
+    text-decoration: none;
+}
+a:hover {
+    color: blue;
+}

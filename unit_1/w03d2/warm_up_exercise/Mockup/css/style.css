@@ -1,0 +1,66 @@
+body{
+    background-color: #D1CBD6;
+    border: 20px;
+    text-align: center;
+    padding: 0px 5%;
+
+}
+
+header {
+    background-color: whitesmoke;
+    padding: 3px 10%;
+    text-align: center;
+
+    
+}
+
+img{
+    width: 90%;
+    margin: auto;
+    
+}
+
+main {
+   background-color: rgb(232, 230, 233);
+   padding: 20px;
+}
+
+h1,h2 {
+    Font-family: 'Roboto', sans-serif;
+    color: #3B5B7B;
+    text-align: center;
+}
+
+h3 {
+    color: rgb(154, 130, 172);
+    font-family: "Roboto", sans-serif;
+}
+
+nav {
+    background-color: rgb(232, 230, 233);
+    padding: 20px;
+
+}
+
+
+.A1,.A2{
+ background-color: whitesmoke;
+ width: 70%;
+ text-align: center;
+ padding: 10px;
+ margin: 20px auto;
+
+}
+
+ul,ol,p{
+    text-align: left;
+    font-family: "Raleway", sans-serif;
+    
+}
+
+footer {
+    background-color: whitesmoke;
+    padding: 10px;
+    
+
+}

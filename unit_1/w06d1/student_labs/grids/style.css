@@ -1,0 +1,14 @@
+body {
+    background-color: gray;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    
+}
+
+.cube {
+    flex-basis: calc(100% / 8);
+    /* box-sizing: border-box; */
+    height: 50px;
+    /* border: 1px solid white; */
+}

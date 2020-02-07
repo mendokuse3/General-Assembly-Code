@@ -1,0 +1,12 @@
+.image-container{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(19, 223, 19);
+    text-align: center;
+};
+
+ 
+.image-conatiner :hover {
+    cursor: pointer;
+    background-color: red;
+}

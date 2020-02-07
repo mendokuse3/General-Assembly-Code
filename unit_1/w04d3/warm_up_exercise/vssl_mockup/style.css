@@ -1,0 +1,102 @@
+.flexcol {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+header {
+    background-image: url(img/sailboat.jpg);
+    background-size: cover;
+    background-position: bottom;
+    height: 500px;     
+}
+hr {
+    width: 90%;
+    border: 1px solid lightgray;
+    
+}
+
+h1,h2 {
+    text-align: center;
+    color: white;
+ }
+ h1 {
+     font-size: 64px;
+     line-height: 0;
+ }
+ h2 {
+    font-size: 24px;
+    margin: 0;
+    letter-spacing: 3px;
+ }
+
+.flexrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav {
+    background-color: rgb(25, 25, 25);
+    font-style: none;
+    color: white;
+    height: 100px;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    margin: 50px auto;    
+}
+
+a:hover {
+    font-weight: 900;
+}
+
+.promo {
+    font-size: 48px;
+    text-align: center;
+    margin: 60px auto;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+article {
+    width: 25%;
+    padding: 1%
+}
+
+.left, .middle, .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2%;
+    text-align: left;
+    line-height: 2em;
+
+}
+
+img {
+    margin: 3% 0;
+    width: 250px;
+    height: auto;
+}
+
+.article-link {
+    color: black;
+    text-align: left;
+    margin-left: 0;
+}
+
+footer {
+    align-content: center;
+    margin: 30px 0
+}
+

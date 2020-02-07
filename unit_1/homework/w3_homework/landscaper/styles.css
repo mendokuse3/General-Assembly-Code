@@ -1,0 +1,73 @@
+body{
+    background-color: #3F2A2B;
+    align-content: center;
+}
+
+.container {
+    background-color: #426A5A;
+    height: auto;
+    width: 50%;
+    border: 5px solid #D4E09B;
+    margin-left: 25%;
+    align-content: center;
+    padding-bottom: 10%;
+    text-align: center;
+    border-radius: 25px;
+}
+
+h1 {
+    font-size: 64px;
+    color: #BEB0A7;
+}
+
+#btn-mower {
+    background-color: #FCB97D;
+    border: none;
+    text-decoration: none;
+    color: #397367;
+    padding: 20px 30%;
+    font-size: 30px;
+    border-radius: 10px;
+    box-shadow: 0 9px #999;
+    margin-bottom: 10px;
+   
+}
+
+#btn-mower:hover {
+    background-color: rgb(250, 146, 55);
+}
+
+#btn-mower:active {
+    background-color: rgb(250, 146, 55);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.bank, .tool, .lawnsMowed, .income {
+    font-size: 24px;
+    margin: 20px;
+    color: #D4E09B;
+}
+
+.btn-grid {
+    background-color: #FCB97D;
+    border: none;
+    text-decoration: none;
+    color: #397367;
+    padding: 10px 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    box-shadow: 0 9px #999;
+    margin-bottom: 20px;
+   
+}
+
+.btn-grid:hover {
+    background-color: rgb(250, 146, 55);
+}
+
+.btn-grid:active {
+    background-color: rgb(250, 146, 55);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
