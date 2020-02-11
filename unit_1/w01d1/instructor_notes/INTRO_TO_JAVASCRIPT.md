@@ -15,7 +15,7 @@ _After this lesson, students will be able to:_
 
 ### What is Programming?
 
-The first few weeks of this course will focus on programming skills. This means learning how to "think like a programmer", and also learning to use tools such as Terminal, VSCode, Git, etc.
+The first few weeks of this course will focus on programming skills. This means learning how to "think like a programmer", and also learning to use tools such as the Terminal, VSCode, Git, etc.
 
 Loosely speaking, learning to "think like a programmer" involves learning:
 
@@ -71,7 +71,7 @@ Errors are a **growth opportunity**. When you receive an error, yes it is an obs
 
 ## Add comments to code
 
-Providing verbal comments within your code is great way to make your code comprehensible to others
+Providing verbal comments within your code is a great way to make your code comprehensible to others
 
 single line comment:
 
@@ -89,9 +89,11 @@ comment
  */
 ```
 
-- Keyboard shortcut: `⌘ + /`
+- Keyboard shortcut: 
+	- mac `cmd + /`
+	- pc `ctrl + /`
 
-'Comment out' code that doesn't need to run or that you save for later.
+'Comment out' code that doesn't need to run or that you want to save for later.
 
 ## Describe the basic data types of JS
 
@@ -135,7 +137,7 @@ We can assign strings and numbers to variables using the assignment operator `=`
 var phrase = 'In my room is a chair and a table';
 ```
 
-we can use that variable as a stand-in for the original value:
+We can use that variable as a stand-in for the original value:
 
 ```javascript
 console.log(phrase);
@@ -173,12 +175,12 @@ console.log(sum);
 >x4 => 100
 
 
-### Variable names
+### Variable name conventions
 
-- cannot begin with a number or include special character
-- camelCase
+- Cannot begin with a number or include special character
+- Must be written in `camelCase`
 	- `thisVariable` NOT `this_variable`
-- case sensitive
+- Are case sensitive
 	- `thisVariable` is not the same as `ThisVariable`
 
 ### Semicolons
