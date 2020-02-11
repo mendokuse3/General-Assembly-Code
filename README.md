@@ -239,7 +239,7 @@ All course recordings will be linked below as well as quick links to that days m
 | w24d2 | **Final Projects** |
 | w24d3 || **Final Project Presentations & Graduation ** ||
 
-
+-->
 
 <br>
 <hr>
