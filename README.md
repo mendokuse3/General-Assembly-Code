@@ -63,18 +63,18 @@
 ## Course Overview
 Learn to code in JavaScript, the native language of the web used by developers the world over.
 
-• Coding webpages using Hypertext Markup Language (HTML), Cascading Style
+*s Coding webpages using Hypertext Markup Language (HTML), Cascading Style
 Sheets (CSS), and JavaScript.
-• Programming and computer science fundamentals, as well as software engineering best practices.
-• Version control and collaborative software development with Git and GitHub.
-• Developing full-stack applications with in-demand technologies such as Ruby on Rails, React, Express with Node.js.
-• Building full-stack applications by leveraging common design and architectural patterns like model–view–controller (MVC) and Representational State Transfer (REST).
-• Safely modeling and storing data in SQL and NoSQL databases.
-• Consuming and integrating third-party application programming interfaces (APIs) in an application.
-• Front-end web application development with modern JavaScript frameworks such as React.
-• Deploying applications to the web via cloud-based hosting.
-• Implementing common data structures encountered in technical interview situations
-• Solving algorithmic challenges and analyzing the computational complexity of algorithms using Big O notation
+*s Programming and computer science fundamentals, as well as software engineering best practices.
+*s Version control and collaborative software development with Git and GitHub.
+*s Developing full-stack applications with in-demand technologies such as Ruby on Rails, React, Express with Node.js.
+*s Building full-stack applications by leveraging common design and architectural patterns like model–view–controller (MVC) and Representational State Transfer (REST).
+*s Safely modeling and storing data in SQL and NoSQL databases.
+*s Consuming and integrating third-party application programming interfaces (APIs) in an application.
+*s Front-end web application development with modern JavaScript frameworks such as React.
+*s Deploying applications to the web via cloud-based hosting.
+*s Implementing common data structures encountered in technical interview situations
+*s Solving algorithmic challenges and analyzing the computational complexity of algorithms using Big O notation
 
 #### Unit Structure
 | Unit | Content | 
@@ -151,8 +151,7 @@ All course recordings will be linked below as well as quick links to that days m
 | Day | Warm Up Exercise | Lectures | Labs | Homework | Recording |
 |:---:|:-----------:|:-------:|:-----------:|:-----------:|:-----------:|
 | w01d1 |[](./unit_1/w01d1/warm_up_exercise)| [Expectations, Culture, Success, Intro to Terminal](./unit_1/w01d1/instructor_notes)| [](./unit_1/w01d1/student_labs)|[](./unit_1/w01d1/homework)| [Recording]()
-
-<!--
+<!-->
 | w01d2 |[](./unit_1/w01d2/warm_up_exercise)| [Conditionals, Booleans & Loops](./unit_1/w01d2/instructor_notes)| [Errors, Terminal, While loops, for loops](./unit_1/w01d2/student_labs)|[Terminal, Booleans, Loops](./unit_1/w01d2/homework)|
 | w01d3 |[Setting Up For Success](./unit_1/w01d3/warm_up_exercise)| [Git and Github, CSS Lesson](./unit_1/w01d3/instructor_notes)| [Problem Solving](./unit_1/w01d3/student_labs)|[Github Practice and Resume Page](./unit_1/w01d3/homework)|
 | w02d1 |[Git Pull Upstream Master](./unit_1/w02d1/warm_up_exercise)| [Intro to Conditionals & Loops](./unit_1/w02d1/instructor_notes)| [Loops & Conditionals](./unit_1/w02d1/student_labs)|[](./unit_1/w02d1/homework)|
@@ -241,11 +240,9 @@ All course recordings will be linked below as well as quick links to that days m
 | w24d2 | **Final Projects** |
 | w24d3 || **Final Project Presentations & Graduation ** ||
 
--->
+
 
 <br>
 <hr>
 
 ###### Licensing <br> 1. All content is licensed under a CC­BY­NC­SA 4.0 license.<br> 1. All software code is licensed under GNU GPLv3. For commercial use or alternative licensing, please contact legal@ga.co.
-# SEIR-MAE-INSTRUCTORS
-# SEIR-MAE-INSTRUCTORS
