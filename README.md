@@ -67,7 +67,18 @@ Build a single-page web app that persists user data and connects to services lik
 
 Learn the fundamentals of object-oriented programming while receiving support from industry experts and a community of peers.
 
-## #hw-submission-procedure
+#### Unit Structure
+| Unit | Content | 
+|:---:|:-----------:|
+| Unit 1 | Front End Web Development 
+| Unit 2 | Full-Stack Development 
+| Unit 3 | Front-End Frameworks 
+| Unit 4 | APIs and Full-Stack Development
+| Unit 5 | Final Project 
+
+<br>
+
+###### #hw-submission-procedure
 ### We will walk through this together the first time!
 * Using that week's homework folder on your forked version of Github, push your changes to your repository from your terminal by changing into your repository from your terminal and running the following commands:
 * `git add .`
@@ -122,7 +133,8 @@ Let's all agree to:
 ## Group Work Formats
 We will be using breakout rooms to get more personalized learning environments. Make sure to get to know your classmates and use eachother as teachers!
 
-## #class-lessons-recordings
+## Class Lessons and Recordings
+###### #class-lessons-recordings
 
 | Day | Warm Up Exercise | Lectures | Labs | Homework | Recording |
 |:---:|:-----------:|:-------:|:-----------:|:-----------:|:-----------:|
