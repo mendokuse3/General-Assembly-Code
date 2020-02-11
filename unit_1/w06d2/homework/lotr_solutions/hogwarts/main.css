@@ -1,0 +1,31 @@
+body {
+  background-color: #f8f7ff;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+table {
+  border: 1px solid gray;
+  margin: 0 auto;
+}
+
+th {
+  border: 1px solid gray;
+}
+
+td {
+  border: 1px solid gray;
+}
+
+.cabbage {
+  color: chartreuse;
+}
+
+.secret {
+  color: blue;
+}

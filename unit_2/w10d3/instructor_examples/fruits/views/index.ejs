@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+          <link rel="stylesheet" href="css/app.css" >
+        </head>
+    <body>
+        <h1>Fruits Index Page</h1>
+        <ul>
+            <% for(let i =0; i < fruits.length; i++){ %>
+                <li class="row mt-3 p-2 center">
+                    <a href="/fruits/<%=i%>" class="display-4">
+                        <%=fruits[i].name%>
+                    </a>
+                    <!--  ADD DELETE FORM HERE-->
+                    <form action="/fruits/<%=i; %>?_method=DELETE" method="POST">
+                        <input class="btn btn-primary m-2" type="submit" value="DELETE"/>
+                    </form>
+                    <!-- Add edit link here  -->
+			        <a href="/fruits/<%=i; %>/edit" class="btn btn-success m-2">Edit</a>
+                </li>
+            <% } %>
+        </ul>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/fruits/new">Create a New Fruit</a>
+                </li>
+            </ul>
+        </nav>
+    </body>
+</html>

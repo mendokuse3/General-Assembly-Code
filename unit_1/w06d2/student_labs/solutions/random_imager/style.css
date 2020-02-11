@@ -1,0 +1,25 @@
+body {
+    padding: 30px;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    /* grid-template-columns: 1fr; */
+}
+.random {
+    cursor: pointer;
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    color: darkblue;
+    text-align: center;
+    overflow: hidden;
+}
+
+img {
+    height: 100%;
+}

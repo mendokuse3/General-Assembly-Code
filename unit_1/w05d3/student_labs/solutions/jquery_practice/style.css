@@ -1,0 +1,22 @@
+body {
+    background-color: azure;
+}
+
+.couleur {
+    background-color: gray;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}
+
+.red {
+    background-color: firebrick;
+}
+
+.ivory {
+    background-color: ivory;
+}
+
+.blue {
+    background-color: cornflowerblue;
+}

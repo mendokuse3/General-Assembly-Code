@@ -47,7 +47,7 @@ _After this lesson, students will be able to:_
 
 ## Open Terminal
 
-- mac: `⌘ (Command) + Space`
+- `⌘ (Command) + Space`, or open Spotlight
 - type "Terminal"
 - `Enter`
 

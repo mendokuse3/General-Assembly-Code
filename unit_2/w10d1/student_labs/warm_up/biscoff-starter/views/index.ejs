@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bizcoff</title>
+</head>
+<body>
+
+    Welcome to the Bizcoff World!
+    <nav>
+        <a href="/addnew">Add a new</a>
+    </nav>
+    <% for (let i = 0; i< bakedGoods.length; i++) { %>
+        <h1><a href="/bakedgoods/<%= [i]; %>"><%= bakedGoods[i].name; %></a></h1>
+        <small>$ <%= bakedGoods[i].price; %></small>
+    <% } %>
+</body>
+</html>

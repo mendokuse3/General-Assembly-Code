@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: lightgreen;
+    font-family: "Roboto", sans-serif;
+    padding: 2rem;
+}
+
+nav {
+    background-color: whitesmoke;
+    color: black;
+    padding:30px;
+    margin-bottom: 30px;
+}
+
+nav a {
+    padding: 30px;
+    color: black;
+}
+ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+   list-style: none;
+}
+
+ul li {
+    background-color: whitesmoke;
+    border-radius: 3px;
+    padding: 20px;
+}
+
+a {
+    color: black;
+    margin: 15px;
+}
+
+.btn {
+    display: block;
+    padding: 20px 0;
+    margin: 10px 0;
+    background-color: lavender;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.ul-styles {
+    
+}

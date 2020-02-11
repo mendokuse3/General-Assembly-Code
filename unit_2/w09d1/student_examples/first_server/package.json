@@ -1,0 +1,14 @@
+{
+  "name": "first_server",
+  "version": "1.0.0",
+  "description": "My first server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo error"
+  },
+  "author": "madeline o",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
