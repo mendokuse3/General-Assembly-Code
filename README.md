@@ -14,7 +14,7 @@
 * [Lesson Schedule, Quick Links & Recordings](#class-lessons-recordings)
 
 ## Course Meeting Details
-* **Course Dates**: February 11, 2020 -  August 5, 2020
+* **Course Dates**: February 11, 2020 -  August 8, 2020
 ### Class Meetings
 * Tuesdays & Wednesdays, 6:30 - 10:45 PM Eastern time
 * Saturdays, 10:00 AM - 6:00PM Eastern time
@@ -63,9 +63,18 @@
 ## Course Overview
 Learn to code in JavaScript, the native language of the web used by developers the world over.
 
-Build a single-page web app that persists user data and connects to services like Twitter and Facebook via APIs.
-
-Learn the fundamentals of object-oriented programming while receiving support from industry experts and a community of peers.
+• Coding webpages using Hypertext Markup Language (HTML), Cascading Style
+Sheets (CSS), and JavaScript.
+• Programming and computer science fundamentals, as well as software engineering best practices.
+• Version control and collaborative software development with Git and GitHub.
+• Developing full-stack applications with in-demand technologies such as Ruby on Rails, React, Express with Node.js.
+• Building full-stack applications by leveraging common design and architectural patterns like model–view–controller (MVC) and Representational State Transfer (REST).
+• Safely modeling and storing data in SQL and NoSQL databases.
+• Consuming and integrating third-party application programming interfaces (APIs) in an application.
+• Front-end web application development with modern JavaScript frameworks such as React.
+• Deploying applications to the web via cloud-based hosting.
+• Implementing common data structures encountered in technical interview situations
+• Solving algorithmic challenges and analyzing the computational complexity of algorithms using Big O notation
 
 #### Unit Structure
 | Unit | Content | 
@@ -81,10 +90,10 @@ Learn the fundamentals of object-oriented programming while receiving support fr
 ###### #hw-submission-procedure
 ### We will walk through this together the first time!
 * Using that week's homework folder on your forked version of Github, push your changes to your repository from your terminal by changing into your repository from your terminal and running the following commands:
-* `git add .`
+* `git add -A`
 * `git commit -m "current week homework”`
 * `git push`
-* Fill out this [Google Form __Needs Update__](https://forms.gle/iaTFamd8Ry38Axa4A) with your github link for that specific homework. It will be the same Google Form for each homework.
+* Fill out this [Google Form](https://forms.gle/wJCEUazrWru7uNQe7) with your github link for that specific homework. It will be the same Google Form for each homework.
 
 ## What We Expect From You
 ### Graduation Requirements
@@ -93,11 +102,12 @@ Learn the fundamentals of object-oriented programming while receiving support fr
 - To receive a passing grade, students must complete 100% of the minimum tasks specified in that assignment
 ####  PROJECTS
 - Students must receive a passing grade on all course projects.
+- Students must present their projects on the specified project presentation date
 - Parameters for passing will be explained when the project is assigned.
 ####  ZERO ACCOUNT BALANCE
 - Students must have no outstanding balances due on their account
 ####  ATTENDANCE
-- Have at least an 80% attendance record (you’ve missed 24 hours total or less of class)
+- Students must have at least an 80% attendance record (you’ve missed 24 hours total or less of class)
 - Attendance is taken at the start of every class meeting.
 - 3 late arrivals &/or early departures will constitute one absence.
 - Unexcused absences are not permitted unless it’s an exceptional circumstance.
@@ -126,15 +136,17 @@ Let's all agree to:
 
 * No distractions during class. This means no cell phones, children around.
 * Make sure to speak up and speak out about any problems you are having! Don't be afraid to ask questions during class! Someone else is probably having this same issue!
-* Carve out at least 10 hours outside a class a week for review and homework. Expect the next 6 months to be out of the norm for you. If you have to carve out a personal hour during a family vacation, you will have to do this!
+* Carve out at least 10 hours outside of class a week for review and homework. Expect the next 6 months to be out of the norm for you. If you have to carve out a personal hour during a family vacation, you will have to do this!
 * Make use of office hours! Find a time that works for you and don't cancel on your instructors :)
 * Hold yourself accountable. Don't let yourself fall behind!
 
 ## Group Work Formats
-We will be using breakout rooms to get more personalized learning environments. Make sure to get to know your classmates and use eachother as teachers!
+We will be using breakout rooms to get create more personalized learning environments. Make sure to get to know your classmates and use eachother as teachers!
 
 ## Class Lessons and Recordings
 ###### #class-lessons-recordings
+
+All course recordings will be linked below as well as quick links to that days markdown files and exercises. Recordings will be posted witin 12 - 24 hours of that class ending.
 
 | Day | Warm Up Exercise | Lectures | Labs | Homework | Recording |
 |:---:|:-----------:|:-------:|:-----------:|:-----------:|:-----------:|
@@ -231,5 +243,7 @@ We will be using breakout rooms to get more personalized learning environments. 
 
 -->
 
+<br>
+<hr>
 
-## Licensing <br> 1. All content is licensed under a CC­BY­NC­SA 4.0 license.<br> 1. All software code is licensed under GNU GPLv3. For commercial use or alternative licensing, please contact legal@ga.co.
+###### Licensing <br> 1. All content is licensed under a CC­BY­NC­SA 4.0 license.<br> 1. All software code is licensed under GNU GPLv3. For commercial use or alternative licensing, please contact legal@ga.co.
