@@ -151,7 +151,8 @@ All course recordings will be linked below as well as quick links to that days m
 | Day | Warm Up Exercise | Lectures | Labs | Homework | Recording |
 |:---:|:-----------:|:-------:|:-----------:|:-----------:|:-----------:|
 | w01d1 |[](./unit_1/w01d1/warm_up_exercise)| [Expectations, Culture, Success, Intro to Terminal](./unit_1/w01d1/instructor_notes)| [](./unit_1/w01d1/student_labs)|[](./unit_1/w01d1/homework)| [Recording](https://generalassembly.zoom.us/rec/play/vZ0vJrz6rDs3GoHHtwSDVqN4W43ueq6shycd_fZbmhvmUSFRMAKlYOcaN-PmvRg90lFBYtXMNSMM6fF6?continueMode=true)
-<!--| w01d2 |[](./unit_1/w01d2/warm_up_exercise)| [Conditionals, Booleans & Loops](./unit_1/w01d2/instructor_notes)| [Errors, Terminal, While loops, for loops](./unit_1/w01d2/student_labs)|[Terminal, Booleans, Loops](./unit_1/w01d2/homework)|
+| w01d2 |[](./unit_1/w01d2/warm_up_exercise)| [Conditionals, Booleans & Loops](./unit_1/w01d2/instructor_notes)| [Errors, Terminal, While loops, for loops](./unit_1/w01d2/student_labs)|[Terminal, Booleans, Loops](./unit_1/w01d2/homework)|
+<!--
 | w01d3 |[Setting Up For Success](./unit_1/w01d3/warm_up_exercise)| [Git and Github, CSS Lesson](./unit_1/w01d3/instructor_notes)| [Problem Solving](./unit_1/w01d3/student_labs)|[Github Practice and Resume Page](./unit_1/w01d3/homework)|
 | w02d1 |[Git Pull Upstream Master](./unit_1/w02d1/warm_up_exercise)| [Intro to Conditionals & Loops](./unit_1/w02d1/instructor_notes)| [Loops & Conditionals](./unit_1/w02d1/student_labs)|[](./unit_1/w02d1/homework)|
 | w02d2 |[](./unit_1/w02d2/warm_up_exercise)| [Arrays & Iteration](./unit_1/w02d2/instructor_notes)| [Arrays & Conditionals](./unit_1/w02d2/student_labs)|[Arrays, Loops, & Conditionals Drills](./unit_1/w02d2/homework)|
