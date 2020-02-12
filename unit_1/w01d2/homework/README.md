@@ -38,7 +38,7 @@ Answer the questions, write some code and submit the files via slack (see instru
 
 ## Submission Guidelines
 
-- Must be submitted before the next class day, (ie no later than 10am EST) - if you have problems submitting reach out ~15 minutes before the start of class
+- Homework assigned on Wednesday & Sunday's must be submitted before the following Tuesday evening class. However,We recommend that you submit your wednesday evening homework before Saturday to allow yourself ample time to complete Saturday's homework.
 - Tonight we'll be submitting via `slack`, since we don't have our github set up completely. See instructions below
 
 ### Resources
@@ -524,36 +524,13 @@ With every homework, we'll add a challenge section that is optional. These secti
 
 # Homework submission
 
-You will create one new Github Repository for class that will be where you will host each homework assignment. You will only ever need to create ONE repository (we will do this together right now) and then going forward you will submit homework to this repository as a new neatly labeled folder.
+**For this homework only**
 
-We will walk through this together right now!
+- Please create a direct message with your entire instructional team. 
+- Upload your homework file to this direct message when you have completed your homework!
 
-* Go to your Github Enterprise homepage
-* Click the plus sign in the upper right hand corner of the GHE Navigation
-* Select **New Repository**
-* Name your repository something like `madeline-seir-flex-ada-homework`
-* Make sure to that you repository is created with a `readme.md` and is public (so your instructional team can see your homework)
-* Click **Create Repository**
-* Now we need to clone this repository to our local machines. This will create a connection between your local code and your online submissions!
-* Clone `clone` and select `Clone with HTTPS` and copy the url in the input box
-* Now return to your terminal and `cd desktop`
-* From your `desktop` run `git clone yourcopiedurl`
-* You should now see your cloned folder on your desktop! 
-* ## YOU WILL NOT REPEAT THE ABOVE STEPS EACH WEEK! YOU ONLY NEED ONE REPO FOR HOMEWORK
-
-### The steps below will be repeated every week for each homework assignment
-* Create a new folder inside of your cloned repository on your computer called `current_week_homework_assignment_name` and copy and paste your homework file for week one here.
-* Push your changes to your repository from your terminal by changing into your repository from your terminal and running the following commands:
-
-```
-git add .
-git commit -m "current week homework”
-git push
-```
-
-* Fill out this [Google Form](https://forms.gle/iaTFamd8Ry38Axa4A) with your github link for that specific homework. It will be the same Google Form for each homework.
-
-
+**After this class**
+Going forward, you will be uploading your homework to Github via a homework repository you will create on Github. We will walk through how to set this repository up and how to use Github to submit your homework during *saturdays* class
 
 ---
 
