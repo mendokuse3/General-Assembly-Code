@@ -4,14 +4,13 @@
 
 ---
 
-Title: Evening Lab<br>
 Duration: 1 hr 15 mins approx<br>
 Creator: Thom Page <br>
 Topics: Terminal, Errors, While loops, For Loops<br>
 
 ---
 
-# Afternoon Lab
+# Lab
 
 ## Topics
 
@@ -37,9 +36,9 @@ Work through the following prompts in turn:
 
 * Open Terminal
 
-* Navigate to your Documents directory `/User/username/Documents`
+* Navigate to your Documents directory `/Users/username/Desktop/seir-flex-mae/
 
-* Make a **directory** inside Documents called `w1d1_lab`
+* Make a **directory** inside `seir-flex-mae` called `w1d1_lab`
 
 * Go into the `w1d1_lab` directory
 

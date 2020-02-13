@@ -17,7 +17,7 @@ _After this lesson, students will be able to:_
 
 ### What is Programming?
 
-The first few weeks of this course will focus on programming skills. This means learning how to "think like a programmer", and also learning to use tools such as Terminal, Atom, Git, etc.
+The first few weeks of this course will focus on programming skills. This means learning how to "think like a programmer", and also learning to use tools such as Terminal, VS code, Git, etc.
 
 Loosely speaking, learning to "think like a programmer" involves learning:
 
@@ -89,7 +89,7 @@ comment
  */
 ```
 
-- Atom shortcut: `⌘ + /`
+- Comment shortcut: `⌘ + /`
 
 'Comment out' code that doesn't need to run or that you save for later.
 
