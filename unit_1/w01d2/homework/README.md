@@ -38,7 +38,7 @@ Answer the questions, write some code and submit the files via slack (see instru
 
 ## Submission Guidelines
 
-- Homework assigned on Wednesday & Sunday's must be submitted before the following Tuesday evening class. However,We recommend that you submit your wednesday evening homework before Saturday to allow yourself ample time to complete Saturday's homework.
+- Homework assigned on Wednesday & Saturday's must be submitted before the following Tuesday evening class. However,We recommend that you submit your wednesday evening homework before Saturday to allow yourself ample time to complete Saturday's homework.
 - Tonight we'll be submitting via `slack`, since we don't have our github set up completely. See instructions below
 
 ### Resources
