@@ -89,7 +89,7 @@ comment
  */
 ```
 
-- Atom shortcut: `⌘ + /`
+- Comment shortcut: `⌘ + /`
 
 'Comment out' code that doesn't need to run or that you save for later.
 
