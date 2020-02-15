@@ -90,7 +90,8 @@ Once it's installed, you should have little glasses ![spectacle](https://i.imgur
 - Here are the shortcuts that you will use most often:
 
 | Shortcut | Description |
-|:--A| Select **All** Items |
+|:--------------:|:---:|
+|Command-A| Select **All** Items |
 |Command-C| **Copy** the selected item to the Clipboard. This also works for files in Finder|
 |Command-S| **Save** file |
 |Command-V| **Paste** the contents of the Clipboard into the current document or app. This also works for files in Finder |
