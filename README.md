@@ -2,6 +2,8 @@
 
 # Software Engineering Immersive Remote Flex - MAE
 
+Hello World! - Mendokuse's repo
+
 * Course Meeting Details
 * Instructor Team
 * Communication
