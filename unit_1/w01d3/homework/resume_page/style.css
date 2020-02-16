@@ -11,3 +11,9 @@ h1 {
 h3 {
     color: pink;
 }
+
+div {
+    width: 30%;
+    float: left;
+    margin-left: 2%;
+}
