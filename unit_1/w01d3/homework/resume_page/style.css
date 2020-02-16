@@ -1,11 +1,14 @@
 body {
     margin-left: 25%;
     margin-right: 25%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
 h1 {
     text-align: center;
     font-family: cursive, Arial;
+    text-transform: uppercase;
 }
 
 h3 {
@@ -16,4 +19,27 @@ div {
     width: 30%;
     float: left;
     margin-left: 2%;
+}
+
+#grumpy {
+    border: 1px solid black;
+}
+
+table {
+    background: lavender;
+}
+
+#img2 {
+    border-radius: 50%;
+    width: 50%;
+}
+
+nav > a {
+    float: left;
+    margin-left: 10%;
+    text-decoration: none;
+}
+
+a:hover {
+    color: green;
 }
