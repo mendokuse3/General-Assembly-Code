@@ -90,13 +90,13 @@ Once it's installed, you should have little glasses ![spectacle](https://i.imgur
 - Here are the shortcuts that you will use most often:
 
 | Shortcut | Description |
-|:---:|:----:|
+|:--------------:|:---:|
 |Command-A| Select **All** Items |
 |Command-C| **Copy** the selected item to the Clipboard. This also works for files in Finder|
 |Command-S| **Save** file |
 |Command-V| **Paste** the contents of the Clipboard into the current document or app. This also works for files in Finder |
 |Command-X| **Cut** (remove) the selected item and copy it to the Clipboard|
-|Command + Shift + Z | **Redo** - redo (vscode) something you undid (when you've used Command-Z)|
+|Command-Y | **Redo** - something you undid (when you've used Command-Z)|
 |Command-Z| **Undo** the previous command/typing|
 |Command-Shift-4| Take a screenshot |
 |Command-Spacebar| Open Spotlight |
@@ -291,7 +291,7 @@ If you would learn any two - learn these!
 
 ## Typing
 - Coding JavaScript often means reaching for keys that you're not used to. Take 2-5 minutes every day to practice
-- Try typing.io that specifically lets you practice tying code
+- Try typing.io that specifically lets you practice typing code
 - You can also google `learn to type free` - to find the right typing practice for you, even going back and practicing touch typing regular characters can help you speed up
 
 
