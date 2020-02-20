@@ -83,6 +83,15 @@ console.log(whereIsWaldo[2][1][1]);
 ////////////////////////////////
 //  Excited Kitten
 ////////////////////////////////
+let rando = ["...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away..."];
+for (let i = 1; i <= 20; i++){
+    if (i % 2 === 0) {
+        let rng = Math.floor(Math.random()*3);
+        console.log(rando[rng]);
+    } else {
+        console.log("Love me, pet me! HSSSSS!");
+    }
+}
 
 
 ////////////////////////////////
