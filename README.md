@@ -47,6 +47,17 @@
 * Instructional Assistant: Bruno Leonardo DaSilva
 
 
+## Office Hours
+Your IA will send a zoom link for their office hours into the main Slack channel 5 minutes prior to their hours. This process is subject to change as the course evolves :)
+
+#### Arthur
+Mondays 8:30pm est - 10:30pm est
+
+#### Nando
+Thursdays 8:30pm est - 10:00pm est
+
+
+
 ## Communication
 ##### Send Madeline and IA's message if:
 * You know in advance that you will be missing a class or multiple classes
