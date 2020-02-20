@@ -54,7 +54,23 @@ for (let value of turtles) {
 ////////////////////////////////
 // Methods, Revisited
 ////////////////////////////////
-
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+console.log(favMovies.indexOf("Titanic"));
+favMovies.sort();
+favMovies.pop();
+favMovies.push("Guardians of the Galaxy");
+favMovies.reverse();
+favMovies.shift();
+console.log(favMovies.unshift());
+// this returns the "new" length of the array
+// console.log(favMovies.indexOf("Django Unchained"));
+favMovies.splice(14, 1, "Avatar");
+console.log(favMovies.length/2);
+let slice = favMovies.slice(favMovies.length/2, favMovies.length);
+console.log(slice);
+console.log(favMovies);
+console.log(favMovies.indexOf("Fast and Furious"));
+// if something is not in the array, it returns -1
 
 ////////////////////////////////
 // Where is Waldo
