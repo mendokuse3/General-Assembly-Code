@@ -46,7 +46,10 @@ console.log(wolfy);
 ////////////////////////////////
 // Yell at the Ninja Turtles
 ////////////////////////////////
-
+let turtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+for (let value of turtles) {
+    console.log(value.toUpperCase());
+}
 
 ////////////////////////////////
 // Methods, Revisited
