@@ -98,4 +98,55 @@ for (let i = 1; i <= 20; i++){
 ////////////////////////////////
 const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
 nums.sort();
-console.log(nums[Math.ceil(nums.length/2)])
+console.log(nums[Math.ceil(nums.length/2)]);
+
+// HUNGRY FOR MORE
+
+const kristynsCloset2 = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "GA hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+  ];
+  
+  // Thom's closet is more complicated. Check out this nested data structure!!
+  const thomsCloset2 = [
+    [
+      // These are Thom's shirts
+      "grey button-up",
+      "dark grey button-up",
+      "light blue button-up",
+      "blue button-up",
+    ],[
+      // These are Thom's pants
+      "grey jeans",
+      "jeans",
+      "PJs"
+    ],[
+      // Thom's accessories
+      "wool mittens",
+      "wool scarf",
+      "raybans"
+    ]
+  ];
+
+//  Alien Attire
+let kristynShoe = kristynsCloset2.splice(0, 1);
+thomsCloset2[2].push(kristynShoe);
+
+// Dress Us Up
+console.log("Kristyn will be wearing a " + kristynsCloset2[2] + ", " + kristynsCloset2[3] + ", and " + kristynsCloset2[0] + ".");
+console.log("Thom will be wearing a " + thomsCloset2[0][1] + ", " + thomsCloset2[1][1] + ", and " + thomsCloset2[2][1] + ".");
+
+// Dirty Laundry
+for (let i = 0; i < kristynsCloset2.length; i++){
+    console.log("WHIRR: Now washing " + kristynsCloset2[i]);
+}
+
+// Inventory
+for (let i = 0; i < thomsCloset2.length; i++){
+    console.log(thomsCloset2[i]);
+}
