@@ -91,13 +91,43 @@ const twoDArray = [
     [6,5,4],
     [3,2,1],
 ];
+let trial = [];
 for (let i = 0; i < twoDArray.length; i++){
-    
+    for (let x = 0; x < twoDArray[i].length; x++){
+        console.log(trial.unshift(twoDArray[i][x]));
+    }
 }
 
+// const grid = [
+//     [0, 1, 2],
+//     [3, 4, 5],
+//     [6, 7, 8]
+// ];
 
-const grid = [
-    [0, 1, 2],
-    [3, 4, 5],
-    [6, 7, 8]
-];
+// for (let i = 0; i < grid.length; i++){
+//     for (let x = 0; x < grid.length; x++){
+//         console.log(grid[i][x]);
+//     }
+// }
+
+let trial2 = []
+for (let a of twoDArray){
+    for (let b of a){
+        console.log(trial2.unshift(b));
+    }
+}
+
+// array = [[1,2,3],
+//          [8,9,4],
+//          [7,6,5]]
+
+// let straightened = [];
+// let spiral = function(value) {
+//     for (let i = 0; i < value.length; i++){
+//         straightened.push(array[i]);
+//     }
+//     console.log(straightened);
+// }
+// spiral (array);
+// https://code.likeagirl.io/create-a-nxn-matrix-spiral-with-javascript-955ee18402f7
+
