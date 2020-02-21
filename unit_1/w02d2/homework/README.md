@@ -212,7 +212,7 @@ Note: if you have to add to the array, feel free to add any movie you'd like
  1. Use the method `pop`
  1. `push` "Guardians of the Galaxy"
  1. Reverse the array
- 1. Use the `shift` method
+ 1. Use the `shift` method to remove "Fast and Furious"
  1. `unshift` - what does it return?
  1. `splice` "Django Unchained" and add "Avatar" (try finding the index of "Django Unchained", instead of counting it yourself) Thought question: did this permanently alter our array?
  1. `slice` the last half of the array (challenge yourself and try to programatically determine the middle of the array  rather than counting it and hard coding it) - Thought question: did this permanently alter our array?
