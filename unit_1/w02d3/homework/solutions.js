@@ -20,3 +20,25 @@ const sumArray = array => {
     return(sum);
 }
 console.log(sumArray([1, 2, 3, 4, 5, 6]));
+
+// PRIME NUMBERS
+const checkPrime = number => {
+    for (let i = 2; i <= Math.sqrt(number); i++){
+        if (number % i === 0){
+            return false;
+        }
+    }
+    return true;
+}
+console.log(checkPrime(64));
+
+const printPrimes = number => {
+    for (let i = 1; i <= number; i++){
+        // let check = checkPrime(i);
+        if (checkPrime(i)) {
+            console.log(i);
+        } 
+    }
+}
+
+printPrimes(97);
