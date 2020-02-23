@@ -42,3 +42,65 @@ const printPrimes = number => {
 }
 
 printPrimes(97);
+
+// ROCK PAPER SCISSORS
+const randomMove = () => {
+    // set variable to assign math.random to generate between 0 - 2
+    let rando = Math.ceil(Math.random() * 3);
+    // assign rock, paper, and sciscor to 1-3
+    // use if statement to assign if number then rock or whatever
+    if (rando === 1){
+        return "rock";
+    } else if(rando === 2){
+        return "paper";
+    } else {
+        return "scissors";
+    }
+}
+console.log(randomMove());
+
+console.log("##############");
+// assign user and computer variable to random move function
+let usersMove = randomMove();
+let computersMove = randomMove();
+
+const rockPaperScissors = (usersMove, computersMove) => {
+    let result;
+    // print user move
+    console.log("user chose " + usersMove);
+    // print computer move
+    console.log("computer chose " + computersMove);
+    // compare moves
+        // if result is draw
+    if (usersMove === computersMove){
+        result = "The result is a tie";
+        return result;
+    }
+    // go through each: if user is __ and computer is __ then: 
+    if (usersMove === "rock"){
+        if(computersMove === "paper"){
+            return "paper beats rock, computer wins";
+        } else {
+            return "rock beats scissors, user wins";
+        }
+    }
+    if (usersMove === "paper"){
+        if(computersMove === "rock"){
+            return "paper beats rock, user wins";
+        } else {
+            return "scissors beats rock, computer wins";
+        }
+    }
+    if (usersMove === "scissors"){
+        if (computersMove === "rock"){
+            return "rock beats scissors, computer wins";
+        } else {
+            return "scissors beats paper, user wins";
+        }
+    }
+
+    // print winner or draw
+}
+console.log(rockPaperScissors(usersMove, computersMove));
+
+
