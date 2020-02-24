@@ -6,20 +6,32 @@
 }
 
 button {
-    border-radius: 5%;
+    border-radius: 10%;
 }
 
 nav {
     width: 90%;
-    padding: 30px 5%;
+    padding: 2% 5%;
 }
+
 nav ul li {
     list-style: none;
     display: inline-block;
     padding-left: 2%;
 }
+
 .navbar {
     float: right;
+}
+
+.Oscar {
+    color: blue;
+    text-transform: uppercase;
+    font-size: 26px;
+}
+
+.number {
+    color: rgba(0, 0, 0, .5);
 }
 
 .add {
@@ -52,17 +64,127 @@ nav ul li {
 
 .learnMore div {
     border: 1px solid rgba(0, 0, 0, .2);
+    float: left;
+    height: 300px;
+    width: 30%;
+    margin-left: 2%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.learnMore:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.box {
+    padding-top: 5%;
+    font-size: 18px;
 
 }
 
+.box h5 {
+    font-weight: normal;
+    color: rgba(0, 0, 0, .5);
+}
+
+.box p {
+    padding: 5% 12%;
+
+}
+
+.box button {
+    color: rgba(0, 0, 0, .5);
+    font-size: 14px;
+    padding: 3% 5%;
+}
+
+
 #concierge {
     background-image: url(../images/concierge.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-y: 3.5em;
 }
 
 #doctor {
     background-image: url(../images/doctor.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-y: 3.5em;
 }
 
 #family {
     background-image: url(../images/business.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-y: 3.5em;
 }
+
+
+.choose {
+    margin-top: 8%;
+    text-align: center;
+}
+
+.choose h3 {
+    font-weight: 500;
+    font-size: 1.5em;
+    color: rgba(0, 0, 0, .5);
+}
+.choose h2 {
+    font-size: 2.5em;
+    padding: 3%;
+}
+
+.choose button {
+    font-size: 1.2em;
+    border-radius: 5%;
+    padding: 2% 13%;
+    margin: 3% 2%;
+}
+
+#foryou {
+    background: blue;
+    color: rgba(255, 255, 255, .8);
+}
+
+#forbus {
+    color: blue;
+}
+
+#line {
+    border-top: 1px solid grey;
+    width: 90%;
+    margin: 25% auto 5%;
+}
+
+footer {
+    padding: 0 8%;
+}
+
+footer div {
+    width: 18%;
+    float: left;
+    margin-left: 2%;
+    margin-bottom: 5%;
+    font-size: 14px;
+}
+
+footer div ul {
+    list-style: none;
+}
+
+footer div h6 {
+    padding-bottom: 5%;
+}
+
+footer div ul li {
+    margin-top: 10%;
+    color: rgba(0, 0, 0, .5);
+}
+
