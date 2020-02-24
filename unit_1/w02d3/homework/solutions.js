@@ -101,6 +101,6 @@ const rockPaperScissors = (usersMove, computersMove) => {
 
     // print winner or draw
 }
-console.log(rockPaperScissors(usersMove, computersMove));
 
+console.log(rockPaperScissors(usersMove, computersMove));
 
