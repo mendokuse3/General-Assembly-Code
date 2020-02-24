@@ -1,0 +1,68 @@
+* {
+    /* border: 1px solid green; */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+button {
+    border-radius: 5%;
+}
+
+nav {
+    width: 90%;
+    padding: 30px 5%;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding-left: 2%;
+}
+.navbar {
+    float: right;
+}
+
+.add {
+    background: blue;
+    height: 400px;
+    text-align: left;
+    padding-top: 15%;
+    padding-left: 10%;
+    color: white;
+    margin-bottom: 3%;
+}
+
+.add h1 {
+    font-size: 45px;
+}
+
+.add h4 {
+    font-size: 25px;
+    margin-top: 5%;
+    margin-right: 35%;
+    font-weight: normal;
+}
+
+.add button {
+    margin-top: 5%;
+    font-size: 20px;
+    padding: .8em;
+    color: blue;
+}
+
+.learnMore div {
+    border: 1px solid rgba(0, 0, 0, .2);
+
+}
+
+#concierge {
+    background-image: url(../images/concierge.jpg);
+}
+
+#doctor {
+    background-image: url(../images/doctor.jpg);
+}
+
+#family {
+    background-image: url(../images/business.jpg);
+}
