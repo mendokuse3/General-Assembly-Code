@@ -16,8 +16,6 @@ Prerequisite Videos: <br>
 
 ---
 
-During last saturday's warm up exercise we built out the html for our blog that had this mockup:
-
 
 # Activity
 
@@ -26,20 +24,7 @@ During last saturday's warm up exercise we built out the html for our blog that 
 - Using what you learned about CSS, style the HTML lab so it looks like the mockup.
 
 ## Getting Started
-1) You already created the HTML for this mockup last morning exercise. You should have created it in your `w02d3/warm_up_exercise` folder. We called it `index.html`.
-
-2. Let's copy your work into your `warm_up_exercise` folder for today.
-
-- In terminal:
- - navigate to your `/w03d02/warm_up_exercise` folder
- - create a new folder called `morning_mockup`
- - navigate inside `morning_mockup`
- - from there type `cp ../../w02d3/warm_up_exercise/*.html .` NOTE: if you created more files than this (like a CSS file), you will also need to copy those files.
- - This command will copy all `html` files from Friday's folder into today's `warm_up_exercise` folder
-
- Note: if you have created your files elsewhere, you will need to adjust the path!
-
- Note: if you struggled making the html, we've included an `sample_index.html` for you to work off of in this folder.
+1) Use your starter code from the previous class to continue working on this!
 
 ## Hungry For More?
 
