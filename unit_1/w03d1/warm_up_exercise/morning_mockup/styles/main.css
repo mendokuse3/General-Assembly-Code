@@ -1,0 +1,67 @@
+body {
+    font-family: 'Raleway', 'Sans-serif';
+    background: rgb(208, 208, 219);
+    padding: 0% 3% 1%;
+}
+
+main {
+    background: rgb(245, 245, 245);
+}
+
+.test, header, footer {
+    background: white;
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    padding-top: 3%;
+    font-weight: 800;
+
+}
+
+.img {
+    width: 80%;
+    margin: 0 10%;
+    padding-bottom: 1%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+article {
+    margin: 0 auto;
+    width: 85%;
+    padding-bottom: 2%;
+}
+
+h3, h4 {
+    text-align: center;
+    padding-top: 2%;
+    font-weight: 800;
+}
+
+article h3 {
+    padding-top: 0;
+}
+
+.test p {
+    padding: 0 1%;
+}
+
+.test {
+    padding-bottom: 2%;
+}
+
+
+h3 {
+    margin-top: 0;
+}
+
+footer {
+    padding-bottom: 1%;
+}
