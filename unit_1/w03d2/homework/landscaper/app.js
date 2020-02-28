@@ -28,6 +28,8 @@ const youWon = () => {
             // resetGame();
             // startGame();
         }
+    } else {
+        startMenu();
     }
 }
 
@@ -69,7 +71,7 @@ let toolsArray = [];
 const startMenu = () => {
     alert("You are starting a landscaping business, but all you have are your teeth.");
     alert("You have $" + money);
-    const begin = prompt("Spend the day cuttin lawns?", "yes/no");
+    const begin = prompt("Spend the day cutting lawns?", "yes/no");
     if (begin === "yes"){
         toolPrompt();
     } else if (begin === "no"){
@@ -78,9 +80,10 @@ const startMenu = () => {
 }
 
 const toolPrompt = () => {
+    toolsArray = [];
     for (let key in tools){
         if(tools[key] === true){
-            toolsArray.push(key)
+            toolsArray.push(key);
         }
     }
     let joined = toolsArray.join(', ');
@@ -89,26 +92,59 @@ const toolPrompt = () => {
     if (toolSelect === "teeth"){
         money += toolIncrement["teeth"];
         startMenu();
-    } else if (toolSelect === "rustyScissors"){
+    } else if (toolSelect === "rustyScissors" && tools["rustyScissors"] === true){
         money += toolIncrement["rustyScissors"];
         startMenu();
-    } else if (toolSelect === "oldLawnmower"){
+    } else if (toolSelect === "oldLawnmower" && tools["oldLawnmower"] === true){
         money += toolIncrement["oldLawnmower"];
         startMenu();
-    } else if (toolSelect === "fancyLawnmower"){
+    } else if (toolSelect === "fancyLawnmower" && tools["fancyLawnmower"] === true){
         money += toolIncrement["fancyLawnmower"];
         startMenu();
-    } else if (toolSelect === "starvingStudents"){
+    } else if (toolSelect === "starvingStudents" && tools["starvingStudents"] === true){
         money += toolIncrement["starvingStudents"];
         startMenu();
+    } else {
+        alert("Error!");
+        startMenu();
     }
-
 }
 
 
+let purchaseTools = [];
 
 const purchasePrompt = () => {
-
+    alert("Would you like to purchase a tool?");
+    for (let key in toolPrice){
+        purchaseTools.push(key + " is $" + toolPrice[key])
+    }
+    let joined = purchaseTools.join(", ");
+    alert(joined);
+    const purchase = prompt("Input tool name", "rustyScissors, oldLawnmower, fancyLawnmower, starvingStuden");
+    if (purchase === "rustyScissors" && money >= toolPrice["rustyScissors"]){
+        tools["rustyScissors"] = true;
+        money -= toolIncrement["rustyScissors"];
+        alert("You purchased rustyScissors");
+        startMenu();
+    } else if (purchase === "oldLawnmower" && money >= toolPrice["oldLawnmower"]){
+        tools["oldLawnmower"] = true;
+        money -= toolIncrement["oldLawnmower"];
+        alert("You purchased oldLawnmower");
+        startMenu();
+    } else if (purchase === "fancyLawnmower" && money >= toolPrice["fancyLawnmower"]){
+        tools["fancyLawnmower"] = true;
+        money -= toolIncrement["fancyLawnmower"];
+        alert("You purchased fancyLawnmower");
+        startMenu();
+    } else if (purchase === "starvingStudents" && money >= toolPrice["starvingStudents"]){
+        tools["starvingStudents"] = true;
+        money -= toolIncrement["starvingStudents"];
+        alert("You purchased starvingStudents");
+        startMenu();
+    } else {
+        alert("Error!");
+        startMenu();
+    }
 }
 
 startMenu();
