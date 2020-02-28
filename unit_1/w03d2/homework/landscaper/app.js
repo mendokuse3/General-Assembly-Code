@@ -70,7 +70,7 @@ const resetGame = () => {
 
 
 const startMenu = () => {
-    checkWin();  //if i remove win condition, price is normal, but inclusion of htis makes price = $false  ====> check wincondition and reset functions
+    checkWin();  
     alert("You are starting a landscaping business, but all you have are your teeth.");
     alert("You have $" + money);
     const begin = prompt("Spend the day cutting lawns?", "yes/no");
@@ -78,6 +78,13 @@ const startMenu = () => {
         toolPrompt();
     } else if (begin === "no"){
         purchasePrompt();
+    } else if (begin === "reset"){
+        resetGame();
+    } else if (begin === "quit"){
+
+    } else {
+        alert("Error!");
+        startMenu();
     }
 }
 
@@ -103,9 +110,11 @@ const toolPrompt = () => {
     } else if (toolSelect === "fancyLawnmower" && tools["fancyLawnmower"] === true){
         money += toolIncrement["fancyLawnmower"];
         startMenu();
-    } else if (toolSelect === "starvingStudents"){
+    } else if (toolSelect === "starvingStudents" && tools["starvingStudents"] === true){
         money += toolIncrement["starvingStudents"];
         startMenu();
+    }  else if (toolSelect === "reset") {
+        resetGame();
     } else {
         alert("Error!");
         startMenu();
@@ -143,6 +152,8 @@ const purchasePrompt = () => {
         money -= toolPrice["starvingStudents"];
         alert("You purchased starvingStudents");
         startMenu();
+    } else if (purchase === "reset") {
+        resetGame();
     } else {
         alert("Error!");
         startMenu();
@@ -150,3 +161,5 @@ const purchasePrompt = () => {
 }
 
 startMenu();
+
+
