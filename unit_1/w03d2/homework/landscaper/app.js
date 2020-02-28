@@ -21,7 +21,7 @@
         // check money variable with price. if = or > then can purchase
         // once tool is purchased prompt spend teh day cutting lawns
 
-let money = 0;
+let money = 50;
 const toolPrice = {
     rustyScissors: 5,
     oldLawnmower: 25,
@@ -41,6 +41,14 @@ let tools = {
     oldLawnmower: false,
     fancyLawnmower: false,
     starvingStudents: false
+}
+
+const numberOfTools = {
+    teeth: 1,
+    rustyScissors: 0,
+    oldLawnmower: 0,
+    fancyLawnmower: 0,
+    starvingStudents: 0
 }
 
 let toolsArray = [];
@@ -102,16 +110,16 @@ const toolPrompt = () => {
         money += toolIncrement["teeth"];
         startMenu();
     } else if (toolSelect === "rustyScissors" && tools["rustyScissors"] === true){
-        money += toolIncrement["rustyScissors"];
+        money += (toolIncrement["rustyScissors"] * numberOfTools["rustyScissors"]);
         startMenu();
     } else if (toolSelect === "oldLawnmower" && tools["oldLawnmower"] === true){
-        money += toolIncrement["oldLawnmower"];
+        money += (toolIncrement["oldLawnmower"] * numberOfTools["oldLawnmower"]);
         startMenu();
     } else if (toolSelect === "fancyLawnmower" && tools["fancyLawnmower"] === true){
-        money += toolIncrement["fancyLawnmower"];
+        money += (toolIncrement["fancyLawnmower"] * numberOfTools["fancyLawnmower"]);
         startMenu();
     } else if (toolSelect === "starvingStudents" && tools["starvingStudents"] === true){
-        money += toolIncrement["starvingStudents"];
+        money += (toolIncrement["starvingStudents"] * numberOfTools["starvingStudents"]);
         startMenu();
     }  else if (toolSelect === "reset") {
         resetGame();
@@ -122,38 +130,67 @@ const toolPrompt = () => {
 }
 
 
-let purchaseTools = [];
-
-const purchasePrompt = () => {
-    alert("Would you like to purchase a tool?");
+const alertTool = () => {
+    let purchaseTools = [];
     for (let key in toolPrice){
         purchaseTools.push(key + " is $" + toolPrice[key])
     }
     let joined = purchaseTools.join(", ");
     alert(joined);
-    const purchase = prompt("Input tool name", "rustyScissors, oldLawnmower, fancyLawnmower, starvingStuden");
+}
+
+const purchasePrompt = () => {
+    alert("Would you like to purchase a tool?");
+    alertTool();
+    const purchase = prompt("Input tool name or input sell", "rustyScissors, oldLawnmower, fancyLawnmower, starvingStudents, sell");
     if (purchase === "rustyScissors" && money >= toolPrice["rustyScissors"]){
         tools["rustyScissors"] = true;
         money -= toolPrice["rustyScissors"];
+        numberOfTools["rustyScissors"] ++;
         alert("You purchased rustyScissors");
         startMenu();
     } else if (purchase === "oldLawnmower" && money >= toolPrice["oldLawnmower"]){
         tools["oldLawnmower"] = true;
         money -= toolPrice["oldLawnmower"];
+        numberOfTools["oldLawnmower"] ++;
         alert("You purchased oldLawnmower");
         startMenu();
     } else if (purchase === "fancyLawnmower" && money >= toolPrice["fancyLawnmower"]){
         tools["fancyLawnmower"] = true;
         money -= toolPrice["fancyLawnmower"];
+        numberOfTools["fancyLawnmower"] ++;
         alert("You purchased fancyLawnmower");
         startMenu();
     } else if (purchase === "starvingStudents" && money >= toolPrice["starvingStudents"]){
         tools["starvingStudents"] = true;
         money -= toolPrice["starvingStudents"];
+        numberOfTools["starvingStudents"] ++;
         alert("You purchased starvingStudents");
         startMenu();
+    } else if (purchase === "sell"){
+        sellPrompt();
     } else if (purchase === "reset") {
         resetGame();
+    } else {
+        alert("Error!");
+        startMenu();
+    }
+}
+
+const sellPrompt = () => {
+    const tool = prompt("Which tool would you like to sell", "rustyScissors, oldLawnmower, fancyLawnmower, starvingStudents");
+    if (tool === "rustyScissors"){
+        money += (toolPrice["rustyScissors"] / 2);
+        startMenu();
+    } else if (tool === "oldLawnmower"){
+        money += (toolPrice["oldLawnmower"] / 2);
+        startMenu();
+    } else if (tool === "fancyLawnmower"){
+        money += (toolPrice["fancyLawnmower"] / 2);
+        startMenu();
+    } else if (tool === "starvingStudents"){
+        money += (toolPrice["starvingStudents"] / 2);
+        startMenu();
     } else {
         alert("Error!");
         startMenu();
