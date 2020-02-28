@@ -21,18 +21,6 @@
         // check money variable with price. if = or > then can purchase
         // once tool is purchased prompt spend teh day cutting lawns
 
-const youWon = () => {
-    if (money = 1000 && starvingStudents === true) {
-        const winner = prompt("You won!!! Restart?", "yes/no");
-        if (winner === "yes"){
-            // resetGame();
-            // startGame();
-        }
-    } else {
-        startMenu();
-    }
-}
-
 let money = 0;
 const toolPrice = {
     rustyScissors: 5,
@@ -47,7 +35,7 @@ const toolIncrement = {
     fancyLawnmower: 100,
     starvingStudents: 250
 }
-const tools = {
+let tools = {
     teeth: true,
     rustyScissors: false,
     oldLawnmower: false,
@@ -57,18 +45,32 @@ const tools = {
 
 let toolsArray = [];
 
-// const resetGame = () => {
-//     money = 0;
-//     tools = {
-//         teeth: true,
-//         rustyScissors: false,
-//         oldLawnmower: false,
-//         fancyLawnmower: false,
-//         starvingStudents: false
-//     }
-// }
+
+const checkWin = () => {
+    if (money >= 1000 && tools["starvingStudents"] === true) {
+        const winner = prompt("You won!!! Restart?", "yes/no");
+        if (winner === "yes"){
+            resetGame();
+        }
+    }
+}
+
+
+const resetGame = () => {
+    money = 0;
+    tools = {
+        teeth: true,
+        rustyScissors: false,
+        oldLawnmower: false,
+        fancyLawnmower: false,
+        starvingStudents: false
+    }
+    startMenu();
+}
+
 
 const startMenu = () => {
+    checkWin();  //if i remove win condition, price is normal, but inclusion of htis makes price = $false  ====> check wincondition and reset functions
     alert("You are starting a landscaping business, but all you have are your teeth.");
     alert("You have $" + money);
     const begin = prompt("Spend the day cutting lawns?", "yes/no");
@@ -101,7 +103,7 @@ const toolPrompt = () => {
     } else if (toolSelect === "fancyLawnmower" && tools["fancyLawnmower"] === true){
         money += toolIncrement["fancyLawnmower"];
         startMenu();
-    } else if (toolSelect === "starvingStudents" && tools["starvingStudents"] === true){
+    } else if (toolSelect === "starvingStudents"){
         money += toolIncrement["starvingStudents"];
         startMenu();
     } else {
@@ -123,22 +125,22 @@ const purchasePrompt = () => {
     const purchase = prompt("Input tool name", "rustyScissors, oldLawnmower, fancyLawnmower, starvingStuden");
     if (purchase === "rustyScissors" && money >= toolPrice["rustyScissors"]){
         tools["rustyScissors"] = true;
-        money -= toolIncrement["rustyScissors"];
+        money -= toolPrice["rustyScissors"];
         alert("You purchased rustyScissors");
         startMenu();
     } else if (purchase === "oldLawnmower" && money >= toolPrice["oldLawnmower"]){
         tools["oldLawnmower"] = true;
-        money -= toolIncrement["oldLawnmower"];
+        money -= toolPrice["oldLawnmower"];
         alert("You purchased oldLawnmower");
         startMenu();
     } else if (purchase === "fancyLawnmower" && money >= toolPrice["fancyLawnmower"]){
         tools["fancyLawnmower"] = true;
-        money -= toolIncrement["fancyLawnmower"];
+        money -= toolPrice["fancyLawnmower"];
         alert("You purchased fancyLawnmower");
         startMenu();
     } else if (purchase === "starvingStudents" && money >= toolPrice["starvingStudents"]){
         tools["starvingStudents"] = true;
-        money -= toolIncrement["starvingStudents"];
+        money -= toolPrice["starvingStudents"];
         alert("You purchased starvingStudents");
         startMenu();
     } else {
