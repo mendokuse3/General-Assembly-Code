@@ -1,5 +1,5 @@
 body {
-    font-family: 'Raleway', 'Sans-serif';
+    font-family: 'Ariel', 'Sans-serif';
     background: rgb(208, 208, 219);
     padding: 0% 3% 1%;
 }
@@ -19,7 +19,7 @@ header {
 header h1 {
     padding-top: 3%;
     font-weight: 800;
-
+    color: rgb(13, 82, 82);
 }
 
 .img {
@@ -60,8 +60,29 @@ article h3 {
 
 h3 {
     margin-top: 0;
+    color: rgb(13, 82, 82);
 }
 
 footer {
     padding-bottom: 1%;
+}
+
+h4 {
+    color: rgb(134, 94, 134);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol {
+    padding-left: 0;
+}
+
+*{
+    border: 1px solid gold;
 }

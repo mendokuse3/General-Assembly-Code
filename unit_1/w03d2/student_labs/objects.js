@@ -92,6 +92,8 @@ console.log(combineCats2(cat1, cat2));
 // console.log(combineCats2(combineCats2(cat1, cat2), combineCats2(cat1, cat2)));
 console.log(combineCats2(combineCats2(combineCats2(cat1, cat2), combineCats2(cat1, cat2)),combineCats2(combineCats2(cat1, cat2), combineCats2(cat1, cat2))));
 
+
+// HUNGRY FOR MORE
 const object = {};
 
 const profiler = (yourUsername, yourHometown, favoriteColor) => {
@@ -113,3 +115,46 @@ const profilerPlus = (key, value) => {
 }
 console.log(profilerPlus("age", 1000));
 
+
+const user = {
+    name: "bob",
+    email: "blahhhh",
+    age: 4,
+    purchased: []
+};
+
+user["email"] = "blahh 2";
+user["age"] ++
+user["location"] = "temple city";
+user["purchased"].push("carbohydrates");
+user["purchased"].push("peace of mind");
+user["purchased"].push("merino jodhpurs");
+console.log(user["purchased"][2]);
+user["friend"] = {
+    name: "tony",
+    age: 4,
+    location: "arcadia",
+    purchased: []
+}
+console.log(user["friend"]["name"])
+console.log(user["friend"]["location"])
+user.friend.age = 55;
+user.friend.purchased.push("the one ring");
+user.friend.purchased.push("A latte");
+console.log(user.friend.purchased[1]);
+
+
+for (let i = 0; i < user.purchased.length; i++){
+    console.log(user.purchased[i]);
+}
+
+for (let i = 0; i < user.friend.purchased.length; i++){
+    console.log(user.friend.purchased[i]);
+}
+
+const updateUser = () => {
+    user.age ++;
+    user.name = user["name"].toUpperCase();
+}
+
+updateUser();
