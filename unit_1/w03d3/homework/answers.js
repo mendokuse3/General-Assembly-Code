@@ -11,3 +11,16 @@
     // ex: const class = [{name: "name1", location: "location1"}, {name: "name2", location: "location2"}, ... ]
 // 6. datatype: array, object, string
     // ex: const class = [{name: "name 1", location: "location 1", tvlist: ["show 1", "show 2"]}, {{name: "name 2", location: "location 2", tvlist: ["show 1", "show 2"]}]
+
+// TAKE IT EASY
+const rainbow = [
+    "red", "orange", "yellow", "green", "blue", "purple"
+]
+console.log(rainbow[4])
+const leo = {
+    faveFood: "food",
+    hobby: "Jiu-Jitsu",
+    town: "Cypress",
+    favDatatype: "string"
+}
+console.log(leo.hobby)
