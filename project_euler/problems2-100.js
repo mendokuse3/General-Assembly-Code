@@ -44,10 +44,10 @@ let smallerNumber;
 //     }
 // }
 
-const fuckThis = () => {
+const attempt = () => {
     if (numberFive % value === 0){
         value --;
-        fuckThis();
+        attempt();
     } else if(numberFive % value !== 0){
         numberFive ++;
     }
