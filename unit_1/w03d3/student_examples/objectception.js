@@ -117,4 +117,14 @@ const challenge = [
 
 const moviesObj = {};
 
-const challengeKey = Object.keys(challenge);
+for (let i = 0; i < challenge.length; i++){
+    let name = challenge[i].title;
+    moviesObj[name] = {
+        director: challenge[i].director,
+        year: challenge[i].year
+    }
+    
+}
+
+
+console.log(moviesObj)
