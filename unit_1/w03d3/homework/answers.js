@@ -148,6 +148,6 @@ for (let key in bondFilms){
     let num3 = parseInt(num2, 10)
     sum += num3
 }
-console.log(sum)
+console.log("$" + sum)
 
 // HUNGRY FOR MORE

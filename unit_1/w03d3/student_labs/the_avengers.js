@@ -171,7 +171,120 @@ const generateCar = ()=>{
 }
 generateCar().drive()
 
+const account = {
+    tweet: () => {
+        return {
+            message: "fun"
+        }
+    }
+}
 
+console.log(account.tweet().message)
+
+const me = {
+    foo: () =>{
+        return {
+            array: [2.5, 7, true]
+        }
+    }
+}
+console.log(me.foo().array[1])
+
+const baz = {
+    foo: () => {
+        return {
+            matt: {
+                travel: "boat"
+            }
+        }
+    }
+}
+
+console.log(baz.foo().matt.travel);
+
+const factory = {
+    createCar: () => {
+        return {
+            startEngine: () => {
+                console.log("hello")
+            }
+        }
+    }
+}
+
+factory.createCar().startEngine();
+
+const matt = {
+    blink: () =>{
+        return ()=>{
+            console.log('hi')
+        }
+    }
+}
+matt.blink()()
+
+const list = [
+    'dogs',
+    false,
+    3.5,
+    ()=>{
+        return {
+            funStuff: ()=>{
+                console.log('yaaassss');
+            }
+        }
+    }
+];
+
+list[3]().funStuff()
+
+// const foo = [
+//     'asdfasdf',
+//     'matt',
+//     false,
+//     6,
+//     ()=>{
+//         return ()=>{
+//             console.log('yes!');
+//         }
+//     },
+//     {
+//         dog:'blue'
+//     }
+// ];
+// foo[4]()()
+
+
+// const foo = {
+//     someMethod: (callback)=>{
+//         console.log('About to invoke the callback');
+//         callback();
+//     }
+// }
+
+// const myFunc = ()=>{
+//     console.log('I have been called!');
+// }
+// foo.someMethod(myFunc);
+
+
+
+
+
+
+const bar = {
+    someMethod: (param)=> {
+        param();
+    }
+}
+
+const foo = {
+    someMethod(){
+        console.log('this method was called');
+    }
+}
+
+foo.someMethod(); //fix this line
 
 
 
