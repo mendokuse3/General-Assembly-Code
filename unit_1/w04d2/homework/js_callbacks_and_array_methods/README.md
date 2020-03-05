@@ -1,9 +1,9 @@
 
 [![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly)
 
-# Combining Datatypes & Callbacks Lab & HW
+# Combining Datatypes & Callbacks HW
 
-This combination lab/hw (start during lab time) is designed to be a review of all the material covered the last few days, to help solidify these fundamentals.
+This combination hw (start during lab time) is designed to be a review of all the material covered the last few days, to help solidify these fundamentals.
 
 #### Learning Objectives
 
@@ -35,12 +35,6 @@ Three files answering the questions in each section
 
 ## Technical Requirements
 1. JavaScript files must run without errors (comment out things that don't work and leave a comment for the hw grader)
-
-
-## Submission Guidelines
-
-- Must be submitted before next start of class
-
 
 ### CSS
 
