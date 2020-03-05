@@ -145,7 +145,7 @@ Sweet! Now that that's all sorted, Gru can just have some fun testing out the re
 
            ```js
            // if you console logged minionNameLengths, you should get
-          [ 3, 5, 6, 4, 5, 5, 4, 3, 4, 4 ]
+          [ 3, 5, 6, 4, 5, 4, 3, 4, 4 ]
            ```
 
          </p></details> 
