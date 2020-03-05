@@ -66,6 +66,29 @@ const powerButton = () => {
     }
 }
 
-powerButton()()
+powerButton()();
 
+
+// MODEL A VENDING MACHINE
+const vendingMachine = {
+    snackArr: [
+        {
+            name: 'cookie',
+            price: 2
+        },
+        {
+            name: "kit kat",
+            price: 1.5
+        },
+        {
+            name: 'chips',
+            price: 2.5
+        }
+    ],
+    vend: (index) => {
+        return vendingMachine.snackArr[index];
+    }
+}
+
+console.log(vendingMachine.vend(2))
 
