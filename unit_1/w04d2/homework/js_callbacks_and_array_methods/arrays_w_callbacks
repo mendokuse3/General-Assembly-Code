@@ -1,0 +1,91 @@
+// SECTION 3 ARRAY METHODS WITH CALLBACKS
+const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 0]
+
+const panagram = ['The', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog']
+
+
+console.log(nums.every((num) => {
+    return num >= 0
+}))
+console.log(panagram.every(() => {
+    for (let i of panagram) {
+        return i.length < 8
+    }
+}))
+
+
+const filterNum = nums.filter((num) => {
+    if (num < 4) {
+        return true;
+    }
+})
+console.log(filterNum);
+
+const evenPanagram = panagram.filter((word) => {
+        if (word.length % 2 === 0){
+            return word;
+    }
+})
+console.log(evenPanagram)
+
+
+console.log(nums.find(num => {
+    if (num % 5 === 0){
+        return num;
+    }
+}))
+console.log(panagram.find(word => {
+    if (word.length > 5){
+        return word;
+    } //there is no word longer than 5 characters
+}));
+
+
+console.log(nums.findIndex(num => {
+    return num % 3 === 0 
+}))
+
+console.log(panagram.findIndex(word => {
+    return word.length < 2;
+    // no word in the panagram array is less than 2 characters.
+}))
+
+
+nums.forEach((num) => {
+    console.log(num * 3);
+})
+
+panagram.forEach((word) => {
+    console.log(word + "!");
+})
+
+
+const mapNums = nums.map((num)=> {
+    return num * 100;
+})
+console.log(mapNums);
+
+const mapPanagram = panagram.map((word)=>{
+    return word.toUpperCase();
+})
+console.log(mapPanagram);
+
+console.log(nums.some((num)=>{
+    if (num % 7 === 0){
+        return true;
+    }
+}))
+
+console.log(panagram.some(word => {
+    for (let i of word){
+        if (i === "a"){
+            return true;
+        }
+    }
+}));
+
+
+
+
+
+
