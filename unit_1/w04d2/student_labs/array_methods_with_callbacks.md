@@ -153,7 +153,7 @@ Sweet! Now that that's all sorted, Gru can just have some fun testing out the re
      - <details><summary><strong>Expected output:</strong></summary><p>
 
          ```js
-         // the sum should be 43
+         // the sum should be 38
          ```
 
        </p></details> 
@@ -183,7 +183,6 @@ Great, now Gru has had some practice with array methods that require callbacks. 
   'Carl',
   'kevin',
   'Jerry',
-  'kevin',
   'Stuart' ]
    ```
 
