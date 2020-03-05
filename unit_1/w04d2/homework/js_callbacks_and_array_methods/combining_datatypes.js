@@ -40,3 +40,32 @@ const apartmentBuilding = [
     false
 ]
 console.log(apartmentBuilding[2][3]);
+
+// Combine objects, arrays, and functions more than one level deep
+
+const knit = () => {
+    return {
+        object: {
+            item: "scarf",
+            size: "6ft"
+        }
+    }
+}
+console.log(knit().object.size)
+
+const crayonSelector = () => {
+    return {
+        crayonBox
+    }
+}
+console.log(crayonSelector().crayonBox.crayonArr[2]);
+
+const powerButton = () => {
+    return options = () => {
+            console.log("select a song");
+    }
+}
+
+powerButton()()
+
+
