@@ -26,7 +26,7 @@
 With the given array of minions...
 
 ```js
-const minions = ['bob', 'kevin', 'stuart', 'dave', 'jerry', 'kevin', 'mark', 'tim', 'phil', 'carl']
+const minions = ['bob', 'kevin', 'stuart', 'dave', 'jerry', 'mark', 'tim', 'phil', 'carl'];
 ```
 
 Gru, the mob boss, wants to test out some array methods with callbacks. Let's go ahead and help him out. 
