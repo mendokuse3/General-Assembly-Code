@@ -92,3 +92,28 @@ const vendingMachine = {
 
 console.log(vendingMachine.vend(2))
 
+// CALLBACKS
+const add = (a, b) => {
+    return a + b;
+}
+
+const subtract = (a, b) => {
+    return a - b;
+}
+
+const multiply = (a, b) => {
+    return a * b;
+}
+
+const divide = (a, b) => {
+    return a / b;
+}
+
+const calculate = (num1, num2, operates) => {
+    return operates(num1, num2)
+}
+
+console.log(calculate(1, 1, add));
+console.log(calculate(2,1, subtract));
+console.log(calculate(2,2, multiply));
+console.log(calculate(4, 2, divide));
