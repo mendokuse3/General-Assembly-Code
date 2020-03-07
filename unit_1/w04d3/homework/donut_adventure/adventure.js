@@ -14,8 +14,9 @@ class Hero {
     announceHealth() {
     console.log(this.health);
     }
-    fight() {
-        console.log("I\'m ready to rumble");
+    fight(enemy) {
+        enemy.health -= this.weapons.sugarShock
+        console.log(`Pizza Rat got hit by Dougie! His health is now at ${enemy.health - this.weapons.sugarShock}`);
     }
 }
 
@@ -37,8 +38,9 @@ class Enemy {
     announceHealth() {
         console.log(this.health);
     }
-    fight() {
-        console.log("i\'m gonna flatten you like a slice of pepperoni");
+    fight(enemy) {
+        enemy.health -= this.weapons.cheeseGrease;
+        console.log(`Dougie got hit by Pizza Rat! His health is now at ${enemy.health - this.weapons.cheeseGrease}`);
     }
 }
 
@@ -46,6 +48,10 @@ const pizzaRat = new Enemy("Pizza Rat");
 
 dougie.talkSass();
 pizzaRat.talkSmack();
+dougie.announceHealth();
+pizzaRat.announceHealth();
+dougie.fight(pizzaRat);
+pizzaRat.fight(dougie);
 dougie.announceHealth();
 pizzaRat.announceHealth();
 
