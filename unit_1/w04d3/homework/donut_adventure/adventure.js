@@ -44,3 +44,8 @@ class Enemy {
 
 const pizzaRat = new Enemy("Pizza Rat");
 
+dougie.talkSass();
+pizzaRat.talkSmack();
+dougie.announceHealth();
+pizzaRat.announceHealth();
+
