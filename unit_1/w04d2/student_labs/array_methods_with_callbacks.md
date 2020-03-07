@@ -26,7 +26,7 @@
 With the given array of minions...
 
 ```js
-const minions = ['bob', 'kevin', 'stuart', 'dave', 'jerry', 'kevin', 'mark', 'tim', 'phil', 'carl']
+const minions = ['bob', 'kevin', 'stuart', 'dave', 'jerry', 'mark', 'tim', 'phil', 'carl'];
 ```
 
 Gru, the mob boss, wants to test out some array methods with callbacks. Let's go ahead and help him out. 
@@ -145,7 +145,7 @@ Sweet! Now that that's all sorted, Gru can just have some fun testing out the re
 
            ```js
            // if you console logged minionNameLengths, you should get
-          [ 3, 5, 6, 4, 5, 5, 4, 3, 4, 4 ]
+          [ 3, 5, 6, 4, 5, 4, 3, 4, 4 ]
            ```
 
          </p></details> 
@@ -153,7 +153,7 @@ Sweet! Now that that's all sorted, Gru can just have some fun testing out the re
      - <details><summary><strong>Expected output:</strong></summary><p>
 
          ```js
-         // the sum should be 43
+         // the sum should be 38
          ```
 
        </p></details> 
@@ -183,7 +183,6 @@ Great, now Gru has had some practice with array methods that require callbacks. 
   'Carl',
   'kevin',
   'Jerry',
-  'kevin',
   'Stuart' ]
    ```
 
