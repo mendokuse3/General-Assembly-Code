@@ -49,7 +49,7 @@ class Person {
         this.height ++;
         this.weight += 3;
         this.mood --;
-        this.bankAccount =+ 10;
+        this.bankAccount += 10;
     }
     buyHamster(hamster) {
         this.hamsters.push(hamster);
@@ -57,3 +57,24 @@ class Person {
         this.bankAccount -= hamster.getPrice();
     }
 }
+
+const timmy = new Person("Timmy");
+for (let i = 0; i < 5; i++){
+    timmy.ageUp();
+    timmy.eat();
+    timmy.exercise();
+}
+for (let i = 0; i < 9; i++){
+    timmy.ageUp();
+}
+const gus = new Hamster("Gus")
+gus.owner = "Timmy";
+timmy.buyHamster(gus);
+for (let i = 0; i < 15; i++){
+    timmy.ageUp()
+}
+timmy.eat();
+timmy.eat();
+timmy.exercise();
+timmy.exercise();
+console.log(timmy);
