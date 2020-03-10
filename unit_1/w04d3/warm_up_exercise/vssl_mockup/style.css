@@ -1,0 +1,17 @@
+* {
+    border: 1px solid green;
+}
+
+ul li {
+    list-style: none;
+    display: inline-flex;
+}
+
+ul {
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    
+}
+
