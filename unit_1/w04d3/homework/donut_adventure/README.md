@@ -50,8 +50,8 @@ Your commit message should read something like: <br>
     - getAge() - returns age
     - getWeight() - returns weight
     - greet() - logs a message with person's name
-    - eat() - increment weight, increment mood
-    - exercise() - decrement weight
+    - eat() - increment weight, increment mood ( if weight is currently 10 it should go up to 11 and same for mood)
+    - exercise() - decrement weight ( if weight is currently 10 weight should change to 9)
     - ageUp() - increment age, increment height, increment weight, decrement mood, increment bank account by 10 (birthday money)
     - buyHamster(hamster) - push the hamster object onto the hamster array, increment mood by 10, decrement bankAccount by the value of the hamster (hint: use getPrice())
 
