@@ -17,31 +17,46 @@ class Ship {
         // use math.random and accuracy to deterimine if attack will hit
         let chance = Math.random();
         if (chance >= this.accuracy){
-            console.log("The attack hit!");
+            return "The attack hit!"
+            // console.log("The attack hit!");
             // if hit then subtract firepower of ship from target
             // this.hull -= this.firepower;
             // maybe console.log health
         } else {
-            console.log("The attack missed!");
+            return "The attack missed!"
+            // console.log("The attack missed!");
             // prompt? or continue with next 
+        }
+    }
+}
+class AlienShip extends Ship {
+    constructor() {
+        super();
+    }
+    attackUSS() {
+        let attack = this.attack();
+        if (attack === "The attack hit!"){
+            console.log("The attack hit!");
+            USS_Schwarzenegger.hull -= this.firepower;
+            if (USS_Schwarzenegger.hull > 0){
+                console.log("The USS Schwarzenegger has " + USS_Schwarzenegger.hull + " hull remaining.")
+            } else if (USS_Schwarzenegger.hull <= 0){
+                console.log("The USS Schwarzenegger has been destroyed!");
+                // game over logic
+                console.log("Game over");
+            }
+        } else if (attack === "The attack missed!"){
+            console.log("The attack missed!");
         }
     }
 }
 
 const alienFleet = [];
 // instantiate 6 alien ships
-const alien1 = new Ship();
-const alien2 = new Ship();
-const alien3 = new Ship();
-const alien4 = new Ship();
-const alien5 = new Ship();
-const alien6 = new Ship();
-alienFleet.push(alien1);
-alienFleet.push(alien2);
-alienFleet.push(alien3);
-alienFleet.push(alien4);
-alienFleet.push(alien5);
-alienFleet.push(alien6);
+for (let i = 0; i < 6; i++){
+    const alien = new AlienShip();
+    alienFleet.push(alien)
+}
 console.log(alienFleet);
 
 // instantiate uss ship
@@ -61,11 +76,46 @@ class USSSchwarzenegger extends Ship {
     retreat() {
         console.log("You ran away.  Game over.")
     }
+    attackAlien() {
+        let attack = this.attack();
+        if (attack === "The attack hit!"){
+            console.log("The attack hit!");
+            alienFleet[0].hull -= this.firepower;
+            if (alienFleet[0].hull > 0){
+                console.log("The alien ship has " + alienFleet[0].hull + " hull remaining.")
+            } else if (alienFleet[0].hull <= 0){
+                console.log("The alien ship has been destroyed!");
+                alienFleet.shift();
+                console.log(alienFleet);
+            }
+        } else if (attack === "The attack missed!"){
+            console.log("The attack missed!");
+        }
+    }
 }
 
 const USS_Schwarzenegger = new USSSchwarzenegger;
 console.log(USS_Schwarzenegger);
-USS_Schwarzenegger.attack();
 
 
+// console.log the situation
+console.log("There is an alien fleet about to attack. Take the initiative and attack them first!");
+console.log("Number of alien ships: " + alienFleet.length)
+// prompt action input
+// let action = prompt("What will you do?", "attack/retreat");
+// action = action.toLowerCase();
+// while (action !== "attack" && action !== "retreat"){
+//     action = prompt("What will you do?", "attack/retreat");
+// }
+// upon retreat input at any point, call retreat function of uss and end game
+// upon attack input
+// you attack first; this should start a loop of you atack alien attack until one is dead
+    // with each iteration, should console.log health of ship after damage has been done
+// after alien ship is dead, remove from alien fleet array
+    // possibly include some sort of logic that says if ship.hull <= 0, remove from array
+// once an alien ship has been defeated, prompt another attack or retreat
+
+// console.log(alienFleet);
+// console.log(alienFleet[0]);
+// USS_Schwarzenegger.attackAlien()
 
