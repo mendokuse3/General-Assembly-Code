@@ -16,7 +16,7 @@ class Ship {
     attack(){
         // use math.random and accuracy to deterimine if attack will hit
         let chance = Math.random();
-        if (chance >= this.accuracy){
+        if (chance <= this.accuracy){
             return "The attack hit!"
             // console.log("The attack hit!");
             // if hit then subtract firepower of ship from target
@@ -43,8 +43,6 @@ class AlienShip extends Ship {
                 console.log("The USS Schwarzenegger has " + USS_Schwarzenegger.hull + " hull remaining.")
             } else if (USS_Schwarzenegger.hull <= 0){
                 console.log("The USS Schwarzenegger has been destroyed!");
-                // game over logic
-                console.log("Game over");
             }
         } else if (attack === "The attack missed!"){
             console.log("The attack missed!");
@@ -108,10 +106,13 @@ const startBattle = () => {
         if (USS_Schwarzenegger.hull > 0){
             startBattle();
         } else if (USS_Schwarzenegger.hull <= 0){
+            console.log("The aliens took over Earth.")
             console.log("Game over");
+            return;
         }
     } else if (alienFleet[0].hull <= 0){
         alienFleet.shift();
+        console.log("The USS Schwarzenegger has " + USS_Schwarzenegger.hull + " hull remaining.")
         console.log("The alien fleet is " + alienFleet.length + " strong. What will you do?");
     } else {
         startBattle();
@@ -120,24 +121,33 @@ const startBattle = () => {
 // startBattle();
 
 const startPrompt = () => {
+    winGame();
     // prompt action input
-    let action = prompt("What will you do?", "attack/retreat");
-    action = action.toLowerCase();
-    while (action !== "attack" && action !== "retreat"){
-        action = prompt("What will you do?", "attack/retreat");
-    }
-    // upon retreat input at any point, call retreat function of uss and end game
-    if (action === "retreat"){
-        console.log("You retreated from the battlefield.  The alien fleet invaded and took over Earth.");
-        console.log("Game over");
-    } else if (action === "attack"){
-        startBattle();   
-        startPrompt();
+    if (alienFleet.length > 0){
+        if (USS_Schwarzenegger.hull > 0){
+            let action = prompt("What will you do?", "attack/retreat");
+            action = action.toLowerCase();
+            while (action !== "attack" && action !== "retreat"){
+                action = prompt("What will you do?", "attack/retreat");
+            }
+            // upon retreat input at any point, call retreat function of uss and end game
+            if (action === "retreat"){
+                console.log("You retreated from the battlefield.  The alien fleet invaded and took over Earth.");
+                console.log("Game over");
+            } else if (action === "attack"){
+                startBattle();   
+                startPrompt();
+            }
+        }
     }
 }
 
-
-
+// if at any point alienFleet.length = 0, you win 
+const winGame = () => {
+    if (alienFleet.length === 0){
+        console.log("Congratulations! You have defeated the alien fleet.  You win.")
+    }
+}
 
 // console.log the situation
 console.log("There is an alien fleet about to attack. Take the initiative and attack them first!");
