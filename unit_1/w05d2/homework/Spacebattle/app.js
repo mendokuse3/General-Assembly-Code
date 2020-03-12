@@ -50,13 +50,20 @@ class AlienShip extends Ship {
     }
 }
 
-const alienFleet = [];
-// instantiate 6 alien ships
-for (let i = 0; i < 6; i++){
-    const alien = new AlienShip();
-    alienFleet.push(alien)
+// const alienFleet = [];
+// // instantiate 6 alien ships
+// for (let i = 0; i < getRandomIntInclusive(2, 14); i++){
+//     const alien = new AlienShip();
+//     alienFleet.push(alien)
+// }
+// // console.log(alienFleet);
+let alienFleet = [];
+const generateFleet = () => {
+    for (let i = 0; i < 6; i++){
+        const alien = new AlienShip();
+        alienFleet.push(alien)
+    }
 }
-// console.log(alienFleet);
 
 // instantiate uss ship
 // uss should extend ship but have its own set values
@@ -146,13 +153,26 @@ const startPrompt = () => {
 const winGame = () => {
     if (alienFleet.length === 0){
         console.log("Congratulations! You have defeated the alien fleet.  You win.")
+        const restart = prompt("Restart the game?", "yes/no");
+        if (restart === "yes"){
+            startGame();
+            // currently, restarting the game works, but then if you decide to retreat in the new game, you have to retreat twice.
+        }
     }
 }
 
+const startGame = () => {
+    generateFleet();
+    USS_Schwarzenegger.hull = 20;
+    console.log("There is an alien fleet about to attack. Take the initiative and attack them first!");
+    console.log("Number of alien ships: " + alienFleet.length)
+    startPrompt();
+}
+
+startGame();
+
+
 // console.log the situation
-console.log("There is an alien fleet about to attack. Take the initiative and attack them first!");
-console.log("Number of alien ships: " + alienFleet.length)
-startPrompt();
 // // prompt action input
 // let action = prompt("What will you do?", "attack/retreat");
 // action = action.toLowerCase();
