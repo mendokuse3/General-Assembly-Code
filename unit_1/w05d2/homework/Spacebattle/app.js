@@ -56,7 +56,7 @@ for (let i = 0; i < 6; i++){
     const alien = new AlienShip();
     alienFleet.push(alien)
 }
-console.log(alienFleet);
+// console.log(alienFleet);
 
 // instantiate uss ship
 // uss should extend ship but have its own set values
