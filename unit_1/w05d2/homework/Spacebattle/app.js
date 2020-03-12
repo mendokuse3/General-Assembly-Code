@@ -78,6 +78,7 @@ class USSSchwarzenegger extends Ship {
         console.log("You ran away.  Game over.")
     }
     attackAlien() {
+        console.log("You are attacking the alien ship.");
         let attack = this.attack();
         if (attack === "The attack hit!"){
             console.log("The attack hit!");
@@ -87,8 +88,8 @@ class USSSchwarzenegger extends Ship {
                 console.log("The alien ship has " + alienFleet[0].hull + " hull remaining.")
             } else if (alienFleet[0].hull <= 0){
                 console.log("The alien ship has been destroyed!");
-                alienFleet.shift();
-                console.log(alienFleet);
+                // alienFleet.shift();
+                // console.log(alienFleet);
             }
         } else if (attack === "The attack missed!"){
             console.log("The attack missed!");
@@ -99,10 +100,33 @@ class USSSchwarzenegger extends Ship {
 const USS_Schwarzenegger = new USSSchwarzenegger;
 console.log(USS_Schwarzenegger);
 
+const startBattle = () => {
+    USS_Schwarzenegger.attackAlien();
+    if (alienFleet[0].hull > 0){
+        console.log("The alien ship is attacking!");
+        alienFleet[0].attackUSS();
+        if (USS_Schwarzenegger.hull > 0){
+            startBattle();
+        } else if (USS_Schwarzenegger.hull <= 0){
+            console.log("Game over");
+        }
+    } else if (alienFleet[0].hull <= 0){
+        alienFleet.shift();
+        console.log("The alien fleet is " + alienFleet.length + " strong. What will you do?");
+    } else {
+        startBattle();
+    }
+}
+startBattle();
+
+
+
+
+
 
 // console.log the situation
-console.log("There is an alien fleet about to attack. Take the initiative and attack them first!");
-console.log("Number of alien ships: " + alienFleet.length)
+// console.log("There is an alien fleet about to attack. Take the initiative and attack them first!");
+// console.log("Number of alien ships: " + alienFleet.length)
 // prompt action input
 // let action = prompt("What will you do?", "attack/retreat");
 // action = action.toLowerCase();
@@ -126,7 +150,5 @@ console.log("Number of alien ships: " + alienFleet.length)
 
 // battle function 
 
-const startBattle = () => {
-    console.log("You are attacking the alien ship.");
 
-}
+// cd unit_1/w05d2/homework/Spacebattle 
