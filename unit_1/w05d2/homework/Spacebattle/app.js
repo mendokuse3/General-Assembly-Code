@@ -59,7 +59,7 @@ class AlienShip extends Ship {
 // // console.log(alienFleet);
 let alienFleet = [];
 const generateFleet = () => {
-    for (let i = 0; i < 6; i++){
+    for (let i = 0; i < getRandomIntInclusive(2, 14); i++){
         const alien = new AlienShip();
         alienFleet.push(alien)
     }
@@ -156,7 +156,6 @@ const winGame = () => {
         const restart = prompt("Restart the game?", "yes/no");
         if (restart === "yes"){
             startGame();
-            // currently, restarting the game works, but then if you decide to retreat in the new game, you have to retreat twice.
         }
     }
 }
@@ -166,10 +165,10 @@ const startGame = () => {
     USS_Schwarzenegger.hull = 20;
     console.log("There is an alien fleet about to attack. Take the initiative and attack them first!");
     console.log("Number of alien ships: " + alienFleet.length)
-    startPrompt();
 }
 
 startGame();
+startPrompt();
 
 
 // console.log the situation
@@ -206,3 +205,6 @@ startGame();
 
 
 // cd unit_1/w05d2/homework/Spacebattle 
+
+// to make enemies stronger after each battle, at end of startBattle function
+// use for loop to =+ 1 to each alien ship's hull and firepower
