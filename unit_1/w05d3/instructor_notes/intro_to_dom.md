@@ -32,7 +32,7 @@ Topics: Intro to the DOM, Intro to 'Vanilla' JS<br>
  
 **`index.html`**
 
-1. `html tab` - to insert html boilder plate
+1. `html tab` - to insert html boiler plate
 1. set title to `Hawkins` inside the head
  
  
