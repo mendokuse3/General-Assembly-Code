@@ -15,12 +15,12 @@ This homework is recommended to be done with a Harry Potter theme. But if you ar
 
 ## Setup - Get Ready to Make So Much Magic
 
-- Make a folder inside your `homework` folder for w3d03 called `hogwarts`.
+- Make a folder inside your `homework` folder for w5d03 called `hogwarts`.
 - `cd` into the `hogwarts` folder
 - `touch index.html`
 - `touch main.css`
 - `touch app.js`
-- `atom .`
+- `code .`
 
 #### In main.css
 
