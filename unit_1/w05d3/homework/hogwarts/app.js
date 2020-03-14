@@ -24,7 +24,37 @@ $(() => {
     $('ul').append($('<li class=\"cat\">').text('leash'));
     $('ul').append($('<li>').text('Bertie Bott\'s Every Flavor [Jelly] Beans'));
 
+    // year 4
+    $container.append($('<h5>').text('Spring 2020'));
+    $container.append($('<table>'));
+    $('table').append($('<thead>'));
+    $('thead').append($('<th>').text("Day"));
+    $('thead').append($('<th>').text("Classes"));
+    const $tr1 = $('<tr>');
+    $('table').append($tr1);
+    $('tr').append($('<td>').text('Monday'));
+    $('tr').append($('<td>').text('Defence Against the Dark Arts'));
+    const $othertr = $('<tr>');
+    $('table').append($othertr);
+    $othertr.append($('<td>').text("Tuesday"));
+    $othertr.append($('<td>').text('Charms, Potions, Transfiguration, Defense Against the Dark Arts'));
+    const $othertr1 = $('<tr>');
+    $('table').append($othertr1);
+    $othertr1.append($('<td>').text("Wednesday"));
+    $othertr1.append($('<td>').text('Charms, Potions, Transfiguration, Defense Against the Dark Arts'));
+    const $othertr2 = $('<tr>');
+    $('table').append($othertr2);
+    $othertr2.append($('<td>').text("Thursday"));
+    $othertr2.append($('<td>').text('Charms, Potions, Transfiguration, Defense Against the Dark Arts'));
+    const $othertr3 = $('<tr>');
+    $('table').append($othertr3);
+    $othertr3.append($('<td>').text("Friday"));
+    $othertr3.append($('<td>').text('Charms, Potions, Transfiguration, Defense Against the Dark Arts'));
     
+    
+
+
+
     
 
 

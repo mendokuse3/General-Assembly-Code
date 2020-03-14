@@ -13,3 +13,11 @@ li {
 .secret {
     opacity: .5;
 }
+
+table, th, td {
+    border: 1px solid gray;
+}
+
+table {
+    margin: auto
+}
