@@ -5,3 +5,11 @@ body {
 .cat {
     font-family: fantasy;
 }
+
+li {
+    list-style: none;
+}
+
+.secret {
+    opacity: .5;
+}
