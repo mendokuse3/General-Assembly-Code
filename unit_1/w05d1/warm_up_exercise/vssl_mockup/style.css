@@ -1,8 +1,6 @@
-* {
-    border: 1px solid green;
+h2, h4 {
+    font-weight: 500;
 }
-
-
 .center-logo{
     background: center / cover no-repeat url(img/sailboat.jpg);
     min-height: 60vh;
@@ -11,7 +9,14 @@
 }
 
 .center-logo h1 {
-    padding-top: 30%;
+    padding-top: 25%;
+    padding-bottom: 0;
+    margin: 0;
+    font-size: 60px;
+}
+.center-logo h4 {
+    margin: 0;
+    padding-bottom: 20%;
 }
 
 
@@ -21,12 +26,16 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
+    width: 80%;
     height: 10vh;
+    flex-wrap: wrap;
+    padding: 2% 10%;
 }
 nav a {
     color: white;
     text-decoration: none;
+    padding-right: 2%;
+    font-size: 18px;
 }
 
 article p {
@@ -38,6 +47,7 @@ article p {
 
 .examples {
     display: flex;
+    justify-content: space-around;
 }
 
 .card {
@@ -49,3 +59,53 @@ article p {
     height: auto;
 }
 
+.card p {
+    font-size: 17px;
+    padding: 5% 0;
+    text-align: left;
+}
+
+.card a {
+    color: black;
+    text-decoration: none;
+    margin-top: 5%;
+}
+
+.pc p {
+    font-size: 16px;
+    font-style: italic;
+    padding: 0;
+    text-align: left;
+    color: gray
+}
+
+.pc {
+    padding-top: 20vh;
+    padding-bottom: 8vh;
+    padding-left: 2%;
+}
+
+.pc-italic {
+    color: black;
+}
+
+.icons {
+    text-align: center;
+    font-size: 25px;
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+
+.icons a {
+    text-decoration: none;
+    color: black;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    width: 95%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+    
