@@ -95,7 +95,7 @@ As web developers, we can interact with this object (DOM) and we can make change
 
 Open the console in Chrome Developer Tools:
 
-`Ctrl Command J`
+`Option Command J`
 
 ![Chrome console](https://i.imgur.com/p3y5hjr.png)
 
