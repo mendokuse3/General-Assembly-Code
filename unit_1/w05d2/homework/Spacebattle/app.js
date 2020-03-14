@@ -65,6 +65,14 @@ const generateFleet = () => {
     }
 }
 
+const rechargeShield = () => {
+    let chargePrompt = prompt("Return to base and recharge shields?", "yes/no");
+    if (chargePrompt === "yes"){
+        USS_Schwarzenegger.hull = 20;
+    }
+}
+
+
 // instantiate uss ship
 // uss should extend ship but have its own set values
 // const USSSchwarzenegger = {
@@ -111,6 +119,14 @@ const startBattle = () => {
         console.log("The alien ship is attacking!");
         alienFleet[0].attackUSS();
         if (USS_Schwarzenegger.hull > 0){
+            for (let i = 0; i < alienFleet.length; i++){
+                let enemyBoostChance = getRandomIntInclusive(1, 2);
+                if (enemyBoostChance === 1){
+                    alienFleet[i].hull ++;
+                } else if (enemyBoostChance === 2){
+                    alienFleet[i].firepower ++;
+                }
+            }
             startBattle();
         } else if (USS_Schwarzenegger.hull <= 0){
             console.log("The aliens took over Earth.")
@@ -120,8 +136,19 @@ const startBattle = () => {
     } else if (alienFleet[0].hull <= 0){
         alienFleet.shift();
         console.log("The USS Schwarzenegger has " + USS_Schwarzenegger.hull + " hull remaining.")
+        if (USS_Schwarzenegger.hull < 20){
+            rechargeShield();
+        }
         console.log("The alien fleet is " + alienFleet.length + " strong. What will you do?");
     } else {
+        for (let i = 0; i < alienFleet.length; i++){
+            let enemyBoostChance = getRandomIntInclusive(1, 2);
+            if (enemyBoostChance === 1){
+                alienFleet[i].hull ++;
+            } else if (enemyBoostChance === 2){
+                alienFleet[i].firepower ++;
+            }
+        }
         startBattle();
     }
 }
@@ -142,6 +169,7 @@ const startPrompt = () => {
                 console.log("You retreated from the battlefield.  The alien fleet invaded and took over Earth.");
                 console.log("Game over");
             } else if (action === "attack"){
+                console.log("The alien ship has " + alienFleet[0].hull + " hull and " + alienFleet[0].firepower + " firepower.");
                 startBattle();   
                 startPrompt();
             }
