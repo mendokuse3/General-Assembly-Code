@@ -17,7 +17,8 @@ $(() => {
 
     // year 3
     $container.append($('<ul>').attr('storage', 'trunk'));
-    $('ul').append($('<li>').text('butter beer'));
+    const $beer = $('<li>').text('butter beer');
+    $('ul').append($beer);
     $('ul').append($('<li class=\"secret\">').text('invisibility cloak'));
     $('ul').append($('<li class=\"secret\">').text('magic map'));
     $('ul').append($('<li class=\"secret\">').text('time turner'));
@@ -50,9 +51,18 @@ $(() => {
     $('table').append($othertr3);
     $othertr3.append($('<td>').text("Friday"));
     $othertr3.append($('<td>').text('Charms, Potions, Transfiguration, Defense Against the Dark Arts'));
-    
-    
 
+
+    // year 5
+    $wand.remove();
+    $beer.remove();
+    $pet.after($wand);
+    $wand.text('a new wandy wand');
+    $wand.css('color', 'indigo');
+    $pet.remove();
+    $('table').after($pet);
+    $pet.remove();
+    $wand.before($pet);
 
 
     
