@@ -65,6 +65,10 @@ $(() => {
     $wand.before($pet);
 
 
+    // year 6
+    $('ul').hide('slow').delay(2000).show('slow');
+    $('li.cat').addClass('cabbage');
+    $('.cabbage').removeClass('cabbage');
     
 
 

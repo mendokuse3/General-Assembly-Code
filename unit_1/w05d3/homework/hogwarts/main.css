@@ -21,3 +21,7 @@ table, th, td {
 table {
     margin: auto
 }
+
+.cabbage {
+    color: chartreuse;
+}
