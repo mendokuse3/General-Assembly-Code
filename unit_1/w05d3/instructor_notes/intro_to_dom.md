@@ -32,7 +32,7 @@ Topics: Intro to the DOM, Intro to 'Vanilla' JS<br>
  
 **`index.html`**
 
-1. `html tab` - to insert html boilder plate
+1. `! tab` - to insert html boiler plate
 1. set title to `Hawkins` inside the head
  
  
@@ -95,7 +95,7 @@ As web developers, we can interact with this object (DOM) and we can make change
 
 Open the console in Chrome Developer Tools:
 
-`Ctrl Command J`
+`Option Command J`
 
 ![Chrome console](https://i.imgur.com/p3y5hjr.png)
 
