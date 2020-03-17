@@ -1,0 +1,26 @@
+
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+h2, h4 {
+    text-align: center;
+}
+
+ol {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    padding: 3vh 5vw;
+    margin: 2%;
+    background-color: palegoldenrod;
+}
+
+
