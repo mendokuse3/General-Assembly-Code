@@ -1,9 +1,16 @@
 body {
     text-align: center;
+    background-color: cornflowerblue;
+    border: 30px solid purple;
+    padding-bottom: 5vh;
 }
 
 .cat {
     font-family: fantasy;
+}
+
+ul {
+    padding-left: 0;
 }
 
 li {
@@ -25,3 +32,4 @@ table {
 .cabbage {
     color: chartreuse;
 }
+

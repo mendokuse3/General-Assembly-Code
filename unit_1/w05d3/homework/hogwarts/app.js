@@ -71,8 +71,11 @@ $(() => {
     $('.cabbage').removeClass('cabbage');
     
 
-
-
+    // year 7
+    $('h5').text("Fall 2020");
+    $('ul').prepend($('<li>').text("Butter Beer"));
+    $('ul').removeAttr('storage');    
+    $('ul').attr('storage', 'chest');
 
 
 
