@@ -1,0 +1,20 @@
+.square {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+}
+
+.red {
+    background-color: red;;
+}
+
+.black {
+    background-color: black;
+}
+
+.container {
+    width: 400px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}

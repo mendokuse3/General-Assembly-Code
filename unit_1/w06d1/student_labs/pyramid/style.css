@@ -1,0 +1,16 @@
+.triangle {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid red;
+}
+  
+.row {
+    /* text-align: center; */
+    /* to try to fix wrapping issue */
+    justify-content: center;
+    display: flex;
+}
+  
