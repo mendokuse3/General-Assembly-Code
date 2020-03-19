@@ -68,17 +68,21 @@ const makeMiddleEarth = () => {
 const makeHobbits = () => {
 
   // Goal: display an unordered list of hobbits in the shire (which is the first article tag on the page)
-
+  console.log("make hobbits");
   // 1. create a 'ul'
-
+  const $list = $('<ul>');
   // 2. make each hobbit an li element and append it to the 'ul' you just created
     // hint: use the given 'hobbits' array and use a for loop
-
-  // 3. also, give each hobbit (`li`) a class of "hobbit"
-
-  // 4. append the ul to the shire
+  for (let i = 0; i < hobbits.length; i++){
+    const $hobbit = $('<li>').text(hobbits[i]);
+    // 3. also, give each hobbit (`li`) a class of "hobbit"
+    $hobbit.addClass('hobbit');
+    $list.append($hobbit);
+  }
+    // 4. append the ul to the shire
+    $('#The-Shire').append($list);
     // hint: get 'The-Shire' by using its id
-
+    
 };
 
 // COMMIT YOUR WORK
