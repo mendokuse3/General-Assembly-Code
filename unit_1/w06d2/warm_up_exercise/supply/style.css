@@ -1,0 +1,83 @@
+/* * {
+    border: 1px solid gold;
+} */
+
+body {
+    padding: 5vh 3vw 0 3vw;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+}
+
+.side-bar {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo {
+    max-width: 20%;
+    height: auto;
+    opacity: 50%;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+    opacity: 10%;
+}
+
+.extra-links {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+    opacity: 15%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding-top: 5%;
+}
+
+.content {
+    width: 80vw;
+}
+
+.first-row img {
+    width: 100%;
+    height: auto;
+}
+
+.second-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 2vh 0;
+}
+
+.second-row div {
+    width: 31%;
+    height: auto;
+}
+
+.second-row div img {
+    width: 100%;
+    height: auto;
+}
+
+.third-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.third-row div {
+    width: 48%;
+}
+
+.third-row div img {
+    width: 100%;
+}
