@@ -111,13 +111,19 @@ console.log('keeping it a secret')
 // Chapter 4
 // ============
 const makeBaddies = () => {
+console.log('making baddies');
 
   // 1. display an unordered list of baddies in Mordor
-
-  // 2. give each of the baddies a class of "baddy"
+  const $list = $('<ul>');
+  for (let i = 0; i < baddies.length; i++){
+    const $baddie = $('<li>').text(baddies[i]);
+    // 2. give each of the baddies a class of "baddy"
+    $baddie.addClass('baddy');
+    $list.append($baddie);
+  }
 
   // 3. remember to append the ul to Mordor
-
+  $('#Mordor').append($list);
 };
 
 // COMMIT YOUR WORK
