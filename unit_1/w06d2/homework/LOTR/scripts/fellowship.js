@@ -160,6 +160,8 @@ console.log("we makin buddies");
 // ============
 
 const leaveTheShire = () => {
+  console.log('run away from the shire');
+  
   // 1. grab the hobbits (the ul in which they reside) and move them to Rivendell
       // hint: the hobbits ul is a childNode of The-Shire-- there is way to get a list of childNodes
   // console.log($('#The-Shire').children()[1]);
@@ -173,6 +175,7 @@ const leaveTheShire = () => {
 // Chapter 7
 // ============
 const beautifulStranger = () => {
+console.log('what a beautiful stranger');
 
   // 1. change the buddy 'Strider' textnode to "Aragorn"
      // hint: You can get a list of elements by tag name, such as 'aside'
@@ -188,6 +191,7 @@ const beautifulStranger = () => {
 // Chapter 8
 // ============
 const forgeTheFellowShip = () => {
+console.log('forging hte fellowship');
 
   // 1. create a new div with an id 'the-fellowship'
   const $fellowship = $('<div>').attr('id', 'the-fellowship');
@@ -207,6 +211,7 @@ const forgeTheFellowShip = () => {
 // Chapter 9
 // ============
 const theBalrog = () => {
+console.log('the balrog');
 
   // 1. change the 'Gandalf' text to 'Gandalf the White'
   $('.buddy').eq(0).text('Gandalf the White');
@@ -223,6 +228,7 @@ const theBalrog = () => {
 // Chapter 10
 // ============
 const hornOfGondor = () => {
+console.log("you should also answer the call of rohan");
 
   // 1. create a pop-up alert that the horn of gondor has been blown
   alert('THE HORN OF GONDOR HAS BEEN BLOWN');
@@ -239,6 +245,7 @@ const hornOfGondor = () => {
 // Chapter 11
 // ============
 const itsDangerousToGoAlone = () => {
+console.log('Its dangerous to go alone. Take this.');
 
   // 1. take Frodo and Sam out of the fellowship and move them to Mordor (they don't need to be inside a ul in Mordor)
   $('.hobbit').eq(0).appendTo($('#Mordor'));
@@ -254,6 +261,7 @@ const itsDangerousToGoAlone = () => {
 // Chapter 12
 // ============
 const weWantsIt = () => {
+console.log('we wants it');
 
   // 1. Create a div with an id of 'gollum' and add it to Mordor
   const $gollum = $('<div>').attr('id', 'gollum');
@@ -271,6 +279,7 @@ const weWantsIt = () => {
 // Chapter 13
 // ============
 const thereAndBackAgain = () => {
+console.log('There and back again');
 
   // 1. remove Gollum and the Ring from the DOM
   $('#gollum').remove();
