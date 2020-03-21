@@ -104,5 +104,16 @@ The browser has something called [local storage](https://developer.mozilla.org/e
 
 Look into jQuery's supplemental libraries like [Draggable and/or Droppable](https://jqueryui.com/droppable/)
 
-## Lab
-Finish today's labs.
+
+
+## Deliverables
+
+1. All your work in the working To Do List webpage. You can submit the link to the folder you completed the lab in (i.e) `todos_starter`.
+
+## Technical Requirements
+
+Your JavaScript files MUST run without syntax errors. If there are errors you can't solve, comment them out and leave a comment above explaining what is wrong
+
+## Submission Guidelines
+
+- Submit your homework via your github fork (to the remote fork) and please don't forget to fill out this [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSfUPnan89JtgRPEbK7GK2yXfUG18y5zzq3szuiXsQ6Md_Julw/viewform)!
