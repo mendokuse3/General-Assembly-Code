@@ -101,6 +101,7 @@ input:focus {
 /* Style list item specific to done-item */
 .done-item {
   background: var(--candy-pink);
+  background: #ED6495
 }
 
 
