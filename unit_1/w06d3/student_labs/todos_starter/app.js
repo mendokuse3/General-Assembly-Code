@@ -1,20 +1,18 @@
 // #container #input-container #input-box #submit #lists #to-do-list
 // #completed .to-do-item .done-item 
-const todoList = [];
-const completed = [];
 
-const render = () => {
-    todoList.forEach((thing) => {
-        console.log(thing);
-    })
+
+const addToDo = () => {
+    const $toDoItem = $('<div>').addClass('to-do-item');
+    $toDoItem.text($('#input-box').val());
+    $('#to-do-list').append($toDoItem);
 }
 
 $(() => {
-    $('#submit').on('click', (event) => {
-        let input = $('#input-box').val();
-        todoList.push(input);
-        $('#input-box').trigger('reset');
-        render();
+    $('form').on('submit', (event) => {
+        addToDo();
+        event.preventDefault();
+        $(event.currentTarget).trigger('reset');
     })
 
 })
