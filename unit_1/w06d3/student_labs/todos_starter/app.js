@@ -7,6 +7,7 @@ const addToDo = () => {
     $toDoItem.text($('#input-box').val());
     $toDoItem.append($('<button>').addClass('complete-btn').text("Completed"));
     $('#to-do-list').append($toDoItem);
+    completeToDO();
 }
 const completeToDO = () => {
     $('.complete-btn').on('click', (event) => {
@@ -14,19 +15,21 @@ const completeToDO = () => {
         $doneItem.addClass('done-item');
         $(event.currentTarget).text('REMOVE');
         $(event.currentTarget).attr('id', 'delete-me');
-        $('#delete-me').on('click', (event2) => {
-            $(event2.currentTarget).parent().remove();
-        })
+        removeToDo();
         $($doneItem).appendTo('#completed');
     })
 }
 
+const removeToDo = () => {
+    $('#delete-me').on('click', (event2) => {
+        $(event2.currentTarget).parent().remove();
+    })
+}
 
 
 $(() => {
     $('form').on('submit', (event) => {
         addToDo();
-        completeToDO();
         event.preventDefault();
         $(event.currentTarget).trigger('reset');
     })
