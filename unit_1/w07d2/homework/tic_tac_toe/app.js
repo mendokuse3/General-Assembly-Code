@@ -33,8 +33,10 @@ $(() => {
             counter = !counter;
         }
         ths.append(marker);
+        // this makes the clicked square unclickable by removing the event handler
+        ths.off()
 
-
+    
     }
 
     generateBoard();
