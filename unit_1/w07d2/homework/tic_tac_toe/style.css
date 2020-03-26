@@ -16,7 +16,16 @@ body {
     width: 33%;
     height: 33%;
     background: plum;
+    font-size: 200px;
 }
+
+.marker {
+    text-align: center;
+    width: 100%;
+    height: 100;
+}
+
+
 
 /* .square:nth-child(2) {
     border-left: 1px solid black;
