@@ -5,25 +5,29 @@ body {
 #container {
     width: 100vw;
     height: 100vh;
-}
-
-.row {
-    height: 33.3%;
-    width: 100%;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.row:nth-child(2){
-    border-top: 1px solid blue;
-    border-bottom: 1px solid blue;
+.square {
+    width: 33%;
+    height: 33%;
+    background-color: plum;
 }
 
-.line {
-    border-left: 1px solid blue;
-    border-right: 1px solid blue;
+/* .square:nth-child(2) {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
 }
+.square:nth-child(5) {
+    border: 1px solid black;
+}
+.square:nth-child(8) {
+    border-left: 1px solid black;
+    border-right: 1px solid black; */
+/* }
+.square:nth-child(4)
+.square:nth-child(6) */
 
-.column {
-    height: 100%;
-    width: 33.3%;
-}
