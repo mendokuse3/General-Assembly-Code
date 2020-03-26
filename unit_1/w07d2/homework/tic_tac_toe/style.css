@@ -6,3 +6,24 @@ body {
     width: 100vw;
     height: 100vh;
 }
+
+.row {
+    height: 33.3%;
+    width: 100%;
+    display: flex;
+}
+
+.row:nth-child(2){
+    border-top: 1px solid blue;
+    border-bottom: 1px solid blue;
+}
+
+.line {
+    border-left: 1px solid blue;
+    border-right: 1px solid blue;
+}
+
+.column {
+    height: 100%;
+    width: 33.3%;
+}
