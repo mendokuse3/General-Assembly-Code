@@ -1,7 +1,7 @@
 $(() => {
     const $container = $('#container')
     // const $squares = $('.square');
-    let counter = 1;
+    let counter = true;
 
     const generateBoard = () => {
         for (let i = 0; i < 9; i++){
@@ -25,12 +25,12 @@ $(() => {
             // else if
                 // if counter % 2 !== 0 then marker.text(o)
                 // counter ++
-        if (counter % 2 === 0){
+        if (counter){
             marker.text('x');
-            counter ++;
-        } else if (counter % 2 !== 0){
+            counter = !counter;
+        } else if (!counter){
             marker.text('o');
-            counter ++;
+            counter = !counter;
         }
         ths.append(marker);
 
