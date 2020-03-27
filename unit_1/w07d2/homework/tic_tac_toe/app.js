@@ -1,6 +1,6 @@
 $(() => {
     const $container = $('#container')
-    const $squares = $('.square');
+    // const $squares = $('.square');
     const $mark = $('.marker');
     let counter = true;
     // let markerArray = [];
@@ -64,6 +64,7 @@ $(() => {
     // for row win
         // 1-3, 4-6,
     const checkWin = () => {
+        const $squares = $('.square');
         // if($mark.eq(0).text() === $mark.eq(1).text() === $mark.eq(2).text()){
         //     console.log('gameover');
         // }
@@ -71,7 +72,33 @@ $(() => {
         // console.log(markerArray[0].text());
         // markerArray.forEach(x => console.log(x.text()));
         console.log(placeholderArray);
-        
+        if (placeholderArray[0] === placeholderArray[1] && placeholderArray[1] === placeholderArray[2]){
+            $squares.off('click', changeSquare);
+            console.log(`${placeholderArray[0]} wins`);
+        } else if (placeholderArray[3] === placeholderArray[4] && placeholderArray[4] === placeholderArray[5]){
+            $squares.off('click', changeSquare);
+            console.log(`${placeholderArray[3]} wins`);
+        } else if (placeholderArray[6] === placeholderArray[7] && placeholderArray[7] === placeholderArray[8]){
+            $squares.off('click', changeSquare);
+            console.log(`${placeholderArray[6]} wins`);
+        } else if (placeholderArray[0] === placeholderArray[3] && placeholderArray[3] === placeholderArray[6]){
+            $squares.off('click', changeSquare);
+            console.log(`${placeholderArray[0]} wins`);
+        } else if (placeholderArray[1] === placeholderArray[4] && placeholderArray[4] === placeholderArray[7]){
+            $squares.off('click', changeSquare);
+            console.log(`${placeholderArray[1]} wins`);
+        } else if (placeholderArray[2] === placeholderArray[5] && placeholderArray[5] === placeholderArray[8]){
+            $squares.off('click', changeSquare);
+            console.log(`${placeholderArray[2]} wins`);
+        }
+        else if (placeholderArray[0] === placeholderArray[4] && placeholderArray[4] === placeholderArray[8]){
+            $squares.off('click', changeSquare);
+            console.log(`${placeholderArray[0]} wins`);
+        }
+        else if (placeholderArray[2] === placeholderArray[4] && placeholderArray[4] === placeholderArray[6]){
+            $squares.off('click', changeSquare);
+            console.log(`${placeholderArray[2]} wins`);
+        }
     }
     
 
