@@ -3,12 +3,15 @@ $(() => {
     const $squares = $('.square');
     const $mark = $('.marker');
     let counter = true;
-    let array = [];
+    // let markerArray = [];
+    let placeholderArray = [];
 
     const generateBoard = () => {
         for (let i = 0; i < 9; i++){
             const $square = $('<div>').addClass('square');
             $square.on('click', changeSquare);
+            $square.attr('id', `${i}`);
+            placeholderArray.push($(`#${i}`))
             $container.append($square);
         }
     }
@@ -29,14 +32,16 @@ $(() => {
                 // counter ++
         if (counter){
             marker.text('x');
-            array.push(marker);
-            // $.merge(array, marker)
+            // markerArray.push(marker);
+            // $.merge(markerArray, marker)
+            placeholderArray[ths.attr('id')] = marker.text();
             checkWin();
             counter = !counter;
         } else if (!counter){
             marker.text('o');
-            array.push(marker);
-            // $.merge(array, marker)
+            // markerArray.push(marker);
+            // $.merge(markerArray, marker)
+            placeholderArray[ths.attr('id')] = marker.text();
             checkWin();
             counter = !counter;
         }
@@ -63,8 +68,10 @@ $(() => {
         //     console.log('gameover');
         // }
         // console.log($mark)
-        // console.log(array[0].text());
-        array.forEach(x => console.log(x.text()));
+        // console.log(markerArray[0].text());
+        // markerArray.forEach(x => console.log(x.text()));
+        console.log(placeholderArray);
+        
     }
     
 
